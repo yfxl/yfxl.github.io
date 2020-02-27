@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="教程," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="小白现码的使用方法，以后再完善。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown的使用方法">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/markdown/index.html">
+<meta property="og:site_name" content="Yfxl&#39;s Blog">
+<meta property="og:description" content="小白现码的使用方法，以后再完善。">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%253A%252F%252Fimgq.duitang.com%252Fuploads%252Fitem%252F201305%252F12%252F20130512213003_A5Kzc.jpeg">
+<meta property="article:published_time" content="2020-02-22T13:22:58.000Z">
+<meta property="article:modified_time" content="2020-02-26T10:30:13.598Z">
+<meta property="article:author" content="Myfxl">
+<meta property="article:tag" content="教程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%253A%252F%252Fimgq.duitang.com%252Fuploads%252Fitem%252F201305%252F12%252F20130512213003_A5Kzc.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/02/22/markdown/"/>
+
+
+
+
+
+  <title>markdown的使用方法 | Yfxl's Blog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yfxl's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Myfxl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yfxl's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">markdown的使用方法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-22T21:22:58+08:00">
+                2020-02-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>小白现码的使用方法，以后再完善。</p>
+<a id="more"></a>
+<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><p>Markdown 支持6种大小标题，对应的是html标签 h1 ~ h6 :</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br></pre></td></tr></table></figure>
+<p>效果如下:<br><font size=7>h1</font><br><font size=6>h2</font><br><font size=5>h3</font><br><font size=4>h4</font><br><font size=3>h5</font><br><font size=2>h6</font></p>
+<blockquote>
+<p>因为这里加标题会影响到目录，所以这里只是模仿一下字体大小&gt;_&lt;</p>
+</blockquote>
+<p>有些支持下划线进行文本大小控制，例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;</span><br><span class="line">这是二级标题</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这种方法仅有两种表现形式，即为一级标题和二级标题。<br>示例如下：</p>
+<p><font face="黑体" size=8>这是一级标题</font><br><font face="黑体" size=6>这是二级标题</font></p>
+<h2 id="段落及区块引用"><a href="#段落及区块引用" class="headerlink" title="段落及区块引用"></a>段落及区块引用</h2><p>Markdown实际上就是一种带标签的普通文本，因此分段时前后保留至少一个空行即可。</p>
+<p>有一种情况是，我们希望对某段文字进行强调，这时可以用&gt;用于段首进行强调，此部分文字将高亮显示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;这段文字将被高亮显示。</span><br></pre></td></tr></table></figure>
+
+<p>显示效果类似于我们常见的引用，示例如下：</p>
+<blockquote>
+<p>这段文字将被高亮显示。</p>
+</blockquote>
+<h2 id="插入链接和图片"><a href="#插入链接和图片" class="headerlink" title="插入链接和图片"></a>插入链接和图片</h2><p>Markdown 针对链接和图片的语法通俗易懂，直接用例子说明：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[点击跳转至百度](http:&#x2F;&#x2F;www.baidu.com)</span><br><span class="line">![图片](https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1582387340843&amp;di&#x3D;dc6e375ced84edbf52d927777bb0cff1&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg)</span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">点击跳转至百度</a><br><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg" alt="图片"></p>
+<blockquote>
+<p>注意：图片前面有一个感叹号，别忘记加^-^</p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>Markdown 支持有序列表和无序列表两种：</p>
+<ul>
+<li>无序列表常用*或者+或者-标识</li>
+<li>有序列表常用数字加.标识</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 张三</span><br><span class="line">+ 李四</span><br><span class="line">- 王五</span><br><span class="line"></span><br><span class="line">1. 张三</span><br><span class="line">2. 李四</span><br><span class="line">3. 王五</span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<ul>
+<li>张三</li>
+</ul>
+<ul>
+<li>李四</li>
+</ul>
+<ul>
+<li>王五</li>
+</ul>
+<ol>
+<li>张三</li>
+<li>李四</li>
+<li>王五</li>
+</ol>
+<blockquote>
+<p>对于有序列表，Markdown只关注第一个编号，也就是说，后面的编号即使标错了，Markdown是顺着往下编号的。</p>
+</blockquote>
+<h3 id="列表的段落使用"><a href="#列表的段落使用" class="headerlink" title="列表的段落使用"></a>列表的段落使用</h3><p>如果一个列表项中包含了多个段落，*与段落之间要保留四个空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*    段落一</span><br><span class="line"></span><br><span class="line">     小段一</span><br><span class="line">*    段落二</span><br><span class="line">     </span><br><span class="line">	 小段二</span><br></pre></td></tr></table></figure>
+
+<p>标记效果如下：</p>
+<ul>
+<li><p>段落一</p>
+<p>小段一</p>
+</li>
+<li><p>段落二</p>
+<p>小段二</p>
+</li>
+</ul>
+<p>列表中如果加入了区块，也要缩进四个空格。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 段落一</span><br><span class="line">     &gt;区块标记一</span><br><span class="line">* 段落二</span><br><span class="line">     &gt;区块标记二</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<ul>
+<li>段落一<blockquote>
+<p>区块标记一</p>
+</blockquote>
+</li>
+<li>段落二<blockquote>
+<p>区块标记二</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>所谓的分割线，用三个下划线即可解决。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>强调包括斜体字和加粗，分别用一个*和两个**包裹，下划线也可以。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*斜体字*</span><br><span class="line">_斜体字_</span><br><span class="line"></span><br><span class="line">**加粗**</span><br><span class="line">__加粗__</span><br></pre></td></tr></table></figure>
+
+<p><em>斜体字</em><br><em>斜体字</em></p>
+<p><strong>加粗</strong><br><strong>加粗</strong></p>
+<h2 id="插入代码块"><a href="#插入代码块" class="headerlink" title="插入代码块"></a>插入代码块</h2><p>Markdown善用可以方便广大程序猿们进行代码分享，因此很受广大群众欢迎。</p>
+<p>使用``可以进行单行代码的包裹，例如<code>int a = 5</code>；（本人上学用C++比较多…）</p>
+<p>如果是一段代码，可以用三个反引号来包裹。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int fun(int x,int y)</span><br><span class="line">&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>反引号是英文模式下esc键下方的那个按键，好多人找不到:)</p>
+</blockquote>
+<h2 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h2><p>表格的语法较为复杂，具体如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头|条目一|条目二</span><br><span class="line">:---:|:---:|:---:</span><br><span class="line">项目|项目一|项目二</span><br></pre></td></tr></table></figure>
+
+<p>显示效果如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">表头</th>
+<th align="center">条目一</th>
+<th align="center">条目二</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">项目</td>
+<td align="center">项目一</td>
+<td align="center">项目二</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>三个短斜杠左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</p>
+</blockquote>
+<h2 id="特殊符号处理"><a href="#特殊符号处理" class="headerlink" title="特殊符号处理"></a>特殊符号处理</h2><p>Markdown中包含许多有特殊用法的符号，如果需要在文章中使其显示出来而不是变成语法的一部分，我们需要用到反斜杠\来进行转义。</p>
+<p>需要转义的特殊符号如下：</p>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">名称</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">\</td>
+<td align="center">反斜线</td>
+</tr>
+<tr>
+<td align="center">`</td>
+<td align="center">反引号</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">星号</td>
+</tr>
+<tr>
+<td align="center">_</td>
+<td align="center">底线</td>
+</tr>
+<tr>
+<td align="center">{}</td>
+<td align="center">花括号</td>
+</tr>
+<tr>
+<td align="center">[]</td>
+<td align="center">方括号</td>
+</tr>
+<tr>
+<td align="center">()</td>
+<td align="center">括弧</td>
+</tr>
+<tr>
+<td align="center">#</td>
+<td align="center">井字号</td>
+</tr>
+<tr>
+<td align="center">+</td>
+<td align="center">加号</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">减号</td>
+</tr>
+<tr>
+<td align="center">.</td>
+<td align="center">英文句点</td>
+</tr>
+<tr>
+<td align="center">!</td>
+<td align="center">感叹号</td>
+</tr>
+<tr>
+<td align="center">~</td>
+<td align="center">波浪号</td>
+</tr>
+</tbody></table>
+<p>例如，如果你需要输出*，你就需要输入\*。</p>
+<h2 id="给文字上色"><a href="#给文字上色" class="headerlink" title="给文字上色"></a>给文字上色</h2><p>这点是使用Markdown最郁闷的地方了，但是也不是完全没有办法。Markdown当初设计时就是一种方便纯文字写作的工具，所以并没有考虑颜色的变换。</p>
+<p>但是正因为Markdown是渲染成html输出的，所以html标记的语法同样适用。</p>
+<p>我们需要使用html标记来更改颜色： </p>
+<p>1.先用Markdown编辑完成<br>2.在需要上色的部分手动添加标签<code>&lt;font color=&#39;#ff0025&#39;&gt;变色&lt;/font&gt;</code>保存即可。</p>
+<p>效果如下：</p>
+<p><font color='#ff0025'>变色</font></p>
+<p>其中的颜色是十六进制颜色码，可以去这个网站参考：<a href="https://www.sioe.cn/yingyong/yanse-rgb-16/" target="_blank" rel="noopener">颜色转换</a></p>
+<p>当你不知道或者不方便查找颜色码的时候，可以这么写：</p>
+<figure class="highlight plain"><figcaption><span>color</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;font color&#x3D;red size&#x3D;10&gt;我是红色&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">## 给文字加划线</span><br><span class="line"></span><br><span class="line">日常的待办事项里我们经常用到这个功能，把做完的事情划道线，也可以表示不一定会完成（误）</span><br><span class="line">具体操作方法如下：用两个波浪号包裹：</span><br></pre></td></tr></table></figure>
+<p><del>划掉</del></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">标识效果如下：</span><br><span class="line"></span><br><span class="line">~划掉~</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 让文字居中显示</span><br><span class="line"></span><br><span class="line">这个功能同样可以用html来实现，语法如下：</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;&lt;center&gt;居中文字&lt;&#x2F;center&gt;</span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<center>居中文字</center>
+
+<h2 id="更换文字字体和大小"><a href="#更换文字字体和大小" class="headerlink" title="更换文字字体和大小"></a>更换文字字体和大小</h2><p>用法同上，也是html标记。</p>
+<p><code>&lt;font face=&quot;黑体&quot; size=10&gt;黑体字&lt;/font&gt;</code></p>
+<p>效果如下：</p>
+<p><font face="黑体" size=10>黑体字</font></p>
+<blockquote>
+<p>经测试，字体大小最大应该是7，数值再大它也是7那么大。。。</p>
+</blockquote>
+<blockquote>
+<p><strong>码字不易，麻烦记一下网址啦~  <del>不定期更新干货哦</del></strong><br>作者  Myfxl  摘抄自简书</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/" rel="prev" title="如何在PR里拉出舒服的曲线拉镜">
+                如何在PR里拉出舒服的曲线拉镜 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Myfxl</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础语法"><span class="nav-number">1.</span> <span class="nav-text">基础语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落及区块引用"><span class="nav-number">2.</span> <span class="nav-text">段落及区块引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入链接和图片"><span class="nav-number">3.</span> <span class="nav-text">插入链接和图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表的段落使用"><span class="nav-number">4.1.</span> <span class="nav-text">列表的段落使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分割线"><span class="nav-number">5.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强调"><span class="nav-number">6.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入代码块"><span class="nav-number">7.</span> <span class="nav-text">插入代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入表格"><span class="nav-number">8.</span> <span class="nav-text">插入表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号处理"><span class="nav-number">9.</span> <span class="nav-text">特殊符号处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给文字上色"><span class="nav-number">10.</span> <span class="nav-text">给文字上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换文字字体和大小"><span class="nav-number">11.</span> <span class="nav-text">更换文字字体和大小</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Myfxl</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
