@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,13 @@
 <meta name="theme-color" content="#222">
 
 
+
+  
+  
+    
+    
+  <script src="/blog/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/blog/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -73,21 +80,25 @@
 
 
 
+  
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="Yfxl's Blog" type="application/atom+xml" />
 
 
 
 
 
 
-<meta name="description" content="小白现码的使用方法，以后再完善。">
+<meta name="description" content="小白现码的使用方法，以后再完善。 基础语法Markdown 支持6种大小标题，对应的是html标签 h1 ~ h6 : 123456# h1## h2### h3#### h4##### h5###### h6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown的使用方法">
+<meta property="og:title" content="Markdown的使用方法">
 <meta property="og:url" content="https://yfxl.gitee.io/blog/2020/02/22/markdown/index.html">
 <meta property="og:site_name" content="Yfxl&#39;s Blog">
-<meta property="og:description" content="小白现码的使用方法，以后再完善。">
+<meta property="og:description" content="小白现码的使用方法，以后再完善。 基础语法Markdown 支持6种大小标题，对应的是html标签 h1 ~ h6 : 123456# h1## h2### h3#### h4##### h5###### h6">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%253A%252F%252Fimgq.duitang.com%252Fuploads%252Fitem%252F201305%252F12%252F20130512213003_A5Kzc.jpeg">
 <meta property="article:published_time" content="2020-02-22T13:22:58.000Z">
-<meta property="article:modified_time" content="2020-02-26T10:30:13.598Z">
+<meta property="article:modified_time" content="2020-02-28T11:26:38.386Z">
 <meta property="article:author" content="Myfxl">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -99,7 +110,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/blog/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -127,7 +138,16 @@
 
 
 
-  <title>markdown的使用方法 | Yfxl's Blog</title>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "02a47b17"
+    });
+  daovoice('update');
+  </script>
+
+  <title>Markdown的使用方法 | Yfxl's Blog</title>
   
 
 
@@ -183,7 +203,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/blog/%20" rel="section">
+          <a href="/blog/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -192,18 +212,8 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/blog/about/%20" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/blog/tags/%20" rel="section">
+          <a href="/blog/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -213,7 +223,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/blog/categories/%20" rel="section">
+          <a href="/blog/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -223,7 +233,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/blog/archives/%20" rel="section">
+          <a href="/blog/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -231,11 +241,55 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -269,7 +323,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.gif">
+      <meta itemprop="image" content="/blog/images/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -281,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">markdown的使用方法</h1>
+          <h1 class="post-title" itemprop="name headline">Markdown的使用方法</h1>
         
 
         <div class="post-meta">
@@ -329,6 +383,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog/2020/02/22/markdown/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/blog/2020/02/22/markdown/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -336,6 +400,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  7
+                </span>
+              
+            </div>
           
 
           
@@ -354,27 +449,27 @@
 
       
         <p>小白现码的使用方法，以后再完善。</p>
-<a id="more"></a>
 <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><p>Markdown 支持6种大小标题，对应的是html标签 h1 ~ h6 :</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br></pre></td></tr></table></figure>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>效果如下:<br><font size=7>h1</font><br><font size=6>h2</font><br><font size=5>h3</font><br><font size=4>h4</font><br><font size=3>h5</font><br><font size=2>h6</font></p>
 <blockquote>
 <p>因为这里加标题会影响到目录，所以这里只是模仿一下字体大小&gt;_&lt;</p>
 </blockquote>
 <p>有些支持下划线进行文本大小控制，例如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这是一级标题</span><br><span class="line">&#x3D;&#x3D;&#x3D;</span><br><span class="line">这是二级标题</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这是一级标题</span><br><span class="line">===</span><br><span class="line">这是二级标题</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>这种方法仅有两种表现形式，即为一级标题和二级标题。<br>示例如下：</p>
 <p><font face="黑体" size=8>这是一级标题</font><br><font face="黑体" size=6>这是二级标题</font></p>
 <h2 id="段落及区块引用"><a href="#段落及区块引用" class="headerlink" title="段落及区块引用"></a>段落及区块引用</h2><p>Markdown实际上就是一种带标签的普通文本，因此分段时前后保留至少一个空行即可。</p>
 <p>有一种情况是，我们希望对某段文字进行强调，这时可以用&gt;用于段首进行强调，此部分文字将高亮显示。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;这段文字将被高亮显示。</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">这段文字将被高亮显示。</span></span><br></pre></td></tr></table></figure>
 
 <p>显示效果类似于我们常见的引用，示例如下：</p>
 <blockquote>
 <p>这段文字将被高亮显示。</p>
 </blockquote>
 <h2 id="插入链接和图片"><a href="#插入链接和图片" class="headerlink" title="插入链接和图片"></a>插入链接和图片</h2><p>Markdown 针对链接和图片的语法通俗易懂，直接用例子说明：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[点击跳转至百度](http:&#x2F;&#x2F;www.baidu.com)</span><br><span class="line">![图片](https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1582387340843&amp;di&#x3D;dc6e375ced84edbf52d927777bb0cff1&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">点击跳转至百度</span>](<span class="link">http://www.baidu.com</span>)</span><br><span class="line">![<span class="string">图片</span>](<span class="link">https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1582387340843&amp;di=dc6e375ced84edbf52d927777bb0cff1&amp;imgtype=0&amp;src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg</span>)</span><br></pre></td></tr></table></figure>
 
 <p>显示效果如下：</p>
 <p><a href="http://www.baidu.com" target="_blank" rel="noopener">点击跳转至百度</a><br><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg" alt="图片"></p>
@@ -386,7 +481,7 @@
 <li>无序列表常用*或者+或者-标识</li>
 <li>有序列表常用数字加.标识</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* 张三</span><br><span class="line">+ 李四</span><br><span class="line">- 王五</span><br><span class="line"></span><br><span class="line">1. 张三</span><br><span class="line">2. 李四</span><br><span class="line">3. 王五</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>张三</span><br><span class="line"><span class="bullet">+ </span>李四</span><br><span class="line"><span class="bullet">- </span>王五</span><br><span class="line"></span><br><span class="line"><span class="bullet">1. </span>张三</span><br><span class="line"><span class="bullet">2. </span>李四</span><br><span class="line"><span class="bullet">3. </span>王五</span><br></pre></td></tr></table></figure>
 
 <p>显示效果如下：</p>
 <ul>
@@ -407,7 +502,7 @@
 <p>对于有序列表，Markdown只关注第一个编号，也就是说，后面的编号即使标错了，Markdown是顺着往下编号的。</p>
 </blockquote>
 <h3 id="列表的段落使用"><a href="#列表的段落使用" class="headerlink" title="列表的段落使用"></a>列表的段落使用</h3><p>如果一个列表项中包含了多个段落，*与段落之间要保留四个空格。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*    段落一</span><br><span class="line"></span><br><span class="line">     小段一</span><br><span class="line">*    段落二</span><br><span class="line">     </span><br><span class="line">	 小段二</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*    </span>段落一</span><br><span class="line"></span><br><span class="line"><span class="code">     小段一</span></span><br><span class="line"><span class="bullet">*    </span>段落二</span><br><span class="line"><span class="code">     </span></span><br><span class="line"><span class="code">	 小段二</span></span><br></pre></td></tr></table></figure>
 
 <p>标记效果如下：</p>
 <ul>
@@ -419,7 +514,7 @@
 </li>
 </ul>
 <p>列表中如果加入了区块，也要缩进四个空格。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 段落一</span><br><span class="line">     &gt;区块标记一</span><br><span class="line">* 段落二</span><br><span class="line">     &gt;区块标记二</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>段落一</span><br><span class="line"><span class="code">     &gt;区块标记一</span></span><br><span class="line"><span class="bullet">* </span>段落二</span><br><span class="line"><span class="code">     &gt;区块标记二</span></span><br></pre></td></tr></table></figure>
 
 <p>效果如下：</p>
 <ul>
@@ -433,22 +528,27 @@
 </li>
 </ul>
 <h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>所谓的分割线，用三个下划线即可解决。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">**<span class="strong">*</span></span><br><span class="line"><span class="strong">---</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>强调包括斜体字和加粗，分别用一个*和两个**包裹，下划线也可以。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*斜体字*</span><br><span class="line">_斜体字_</span><br><span class="line"></span><br><span class="line">**加粗**</span><br><span class="line">__加粗__</span><br></pre></td></tr></table></figure>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*斜体字*</span><br><span class="line"><span class="symbol">_</span>斜体字<span class="symbol">_</span></span><br><span class="line"></span><br><span class="line">**加粗**</span><br><span class="line"><span class="symbol">__</span>加粗<span class="symbol">__</span></span><br></pre></td></tr></table></figure>
 
 <p><em>斜体字</em><br><em>斜体字</em></p>
 <p><strong>加粗</strong><br><strong>加粗</strong></p>
 <h2 id="插入代码块"><a href="#插入代码块" class="headerlink" title="插入代码块"></a>插入代码块</h2><p>Markdown善用可以方便广大程序猿们进行代码分享，因此很受广大群众欢迎。</p>
-<p>使用``可以进行单行代码的包裹，例如<code>int a = 5</code>；（本人上学用C++比较多…）</p>
+<p>使用 ` 可以进行单行代码的包裹，例如<code>int a = 5</code>；（本人上学用C++比较多…）</p>
 <p>如果是一段代码，可以用三个反引号来包裹。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int fun(int x,int y)</span><br><span class="line">&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">direction</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> map_x,map_y;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> dx[<span class="number">8</span>] = &#123;<span class="number">-2</span>,<span class="number">-1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">-1</span>,<span class="number">-2</span>&#125;,</span><br><span class="line">                  dy[<span class="number">8</span>] = &#123;<span class="number">-1</span>,<span class="number">-2</span>,<span class="number">-2</span>,<span class="number">-1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;<span class="comment">//八个方向，千万不能错</span></span><br><span class="line"><span class="built_in">queue</span> &lt;direction&gt; a;</span><br><span class="line"><span class="keyword">bool</span> visited[<span class="number">1000</span>][<span class="number">410</span>];</span><br><span class="line"><span class="keyword">int</span> flag[<span class="number">1000</span>][<span class="number">410</span>];</span><br><span class="line"><span class="keyword">int</span> n,m,x,y;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isValid</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &lt;= n &amp;&amp; x &gt;= <span class="number">1</span> &amp;&amp; y &lt;= m &amp;&amp; y &gt;= <span class="number">1</span>)<span class="comment">//防止越界</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> tmp1;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;x&gt;&gt;y;</span><br><span class="line">    direction tmp2;</span><br><span class="line">    tmp2.map_x = x;</span><br><span class="line">    tmp2.map_y = y;</span><br><span class="line">    a.push(tmp2);</span><br><span class="line">    visited[x][y] = <span class="literal">true</span>;<span class="comment">//将起点记录为已经访问过</span></span><br><span class="line">    <span class="keyword">while</span> (!a.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        direction k = a.front();</span><br><span class="line">        a.pop();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">8</span>; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> new_x = k.map_x+dx[j],new_y = k.map_y+dy[j];</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">isValid</span>(new_x,new_y) &amp;&amp; !visited[new_x][new_y])<span class="comment">//如果没有越界而且没有访问过</span></span><br><span class="line">            &#123;</span><br><span class="line">                tmp2.map_x = new_x;</span><br><span class="line">                tmp2.map_y = new_y;</span><br><span class="line">                a.push(tmp2);</span><br><span class="line">                visited[new_x][new_y] = <span class="literal">true</span>;</span><br><span class="line">                flag[new_x][new_y] = flag[k.map_x][k.map_y] + <span class="number">1</span>;    <span class="comment">//前驱结点加一</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; ++i)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=m; ++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> ((i != x || j != y) &amp;&amp; flag[i][j] == <span class="number">0</span>)</span><br><span class="line">                flag[i][j] = <span class="number">-1</span>;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%-5d"</span>,flag[i][j]);</span><br><span class="line">            <span class="keyword">if</span> (j == m)</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"\n"</span>);<span class="comment">//换行</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当年学广搜的一道例题，直接粘过来了</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Tips: 当你需要让代码高亮的时候，需要在开头标明所用语言。<br>比如下面这段用的是Java:</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String agrs[])</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>反引号是英文模式下esc键下方的那个按键，好多人找不到:)</p>
 </blockquote>
 <h2 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h2><p>表格的语法较为复杂，具体如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头|条目一|条目二</span><br><span class="line">:---:|:---:|:---:</span><br><span class="line">项目|项目一|项目二</span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头<span class="params">|条目一|</span>条目二</span><br><span class="line"><span class="symbol">:---</span><span class="symbol">:|</span><span class="symbol">:---</span><span class="symbol">:|</span><span class="symbol">:---</span><span class="symbol">:</span></span><br><span class="line">项目<span class="params">|项目一|</span>项目二</span><br></pre></td></tr></table></figure>
 
 <p>显示效果如下：</p>
 <table>
@@ -539,15 +639,16 @@
 <p><font color='#ff0025'>变色</font></p>
 <p>其中的颜色是十六进制颜色码，可以去这个网站参考：<a href="https://www.sioe.cn/yingyong/yanse-rgb-16/" target="_blank" rel="noopener">颜色转换</a></p>
 <p>当你不知道或者不方便查找颜色码的时候，可以这么写：</p>
-<figure class="highlight plain"><figcaption><span>color</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;font color&#x3D;red size&#x3D;10&gt;我是红色&lt;&#x2F;font&gt;</span><br><span class="line"></span><br><span class="line">## 给文字加划线</span><br><span class="line"></span><br><span class="line">日常的待办事项里我们经常用到这个功能，把做完的事情划道线，也可以表示不一定会完成（误）</span><br><span class="line">具体操作方法如下：用两个波浪号包裹：</span><br></pre></td></tr></table></figure>
+<p><code>&lt;font color=red size=10&gt;我是红色&lt;/font&gt;</code></p>
+<p><font color=red size=10>我是红色</font></p>
+<h2 id="给文字加划线"><a href="#给文字加划线" class="headerlink" title="给文字加划线"></a>给文字加划线</h2><p>日常的待办事项里我们经常用到这个功能，把做完的事情划道线，也可以表示不一定会完成（误）<br>具体操作方法如下：用两个波浪号包裹：</p>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~划掉~</span><br></pre></td></tr></table></figure>
+
+<p>标识效果如下：</p>
 <p><del>划掉</del></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">标识效果如下：</span><br><span class="line"></span><br><span class="line">~划掉~</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 让文字居中显示</span><br><span class="line"></span><br><span class="line">这个功能同样可以用html来实现，语法如下：</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;&lt;center&gt;居中文字&lt;&#x2F;center&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="让文字居中显示"><a href="#让文字居中显示" class="headerlink" title="让文字居中显示"></a>让文字居中显示</h2><p>这个功能同样可以用html来实现，语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">效果如下：</span><br><span class="line"></span><br><span class="line">&lt;center&gt;居中文字&lt;&#x2F;center&gt;</span><br><span class="line"></span><br><span class="line">## 更换文字字体和大小</span><br><span class="line"></span><br><span class="line">用法同上，也是html标记。</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;&lt;font face&#x3D;&quot;黑体&quot; size&#x3D;10&gt;黑体字&lt;&#x2F;font&gt;</span><br></pre></td></tr></table></figure>
 
-<p>效果如下：</p>
-<center>居中文字</center>
-
-<h2 id="更换文字字体和大小"><a href="#更换文字字体和大小" class="headerlink" title="更换文字字体和大小"></a>更换文字字体和大小</h2><p>用法同上，也是html标记。</p>
-<p><code>&lt;font face=&quot;黑体&quot; size=10&gt;黑体字&lt;/font&gt;</code></p>
 <p>效果如下：</p>
 <p><font face="黑体" size=10>黑体字</font></p>
 <blockquote>
@@ -573,7 +674,7 @@
       
         <div class="post-tags">
           
-            <a href="/blog/tags/%E6%95%99%E7%A8%8B/" rel="tag"># 教程</a>
+            <a href="/blog/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
           
         </div>
       
@@ -592,8 +693,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/" rel="prev" title="如何在PR里拉出舒服的曲线拉镜">
-                如何在PR里拉出舒服的曲线拉镜 <i class="fa fa-chevron-right"></i>
+              <a href="/blog/2020/02/24/music2119983629neteasse/" rel="prev" title="日系女声｜在梦中邂逅你至温至柔的嗓音">
+                日系女声｜在梦中邂逅你至温至柔的嗓音 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -623,6 +724,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -660,6 +764,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/blog/images/avatar.png"
+                alt="Myfxl" />
+            
               <p class="site-author-name" itemprop="name">Myfxl</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -669,9 +777,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/blog/archives/%20%7C%7C%20archive">
+                <a href="/blog/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -681,10 +789,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/blog/categories/index.html">
                   <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -692,23 +800,88 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
           </nav>
 
           
-
+            <div class="feed-link motion-element">
+              <a href="/blog/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yfxl" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:yuefengxinglan@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/yuefengxinglan" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/3995918196" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  </span>
+                
+            </div>
           
 
           
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.coolapk.com/feed/16136877?shareKey=YmM0MmMzMmIzNDg1NWU1OTA1YTQ~&shareUid=2744799&shareFrom=com.coolapk.market_10.0.1" title="如何从零开始制作一台便携游戏主机" target="_blank">如何从零开始制作一台便携游戏主机</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.coolapk.com/feed/16825810?shareKey=MzkxMzQ2ODhmNmVhNWU1OTA1YTI~&shareUid=2744799&shareFrom=com.coolapk.market_10.0.1" title="【手机/相机摄影干货-风光角度篇】摄影技巧分享" target="_blank">【手机/相机摄影干货-风光角度篇】摄影技巧分享</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.coolapk.com/feed/16822255?shareKey=NzZjOGE2NzIxMmIzNWU1OTA1YTI~&shareUid=2744799&shareFrom=com.coolapk.market_10.0.1" title="【手机/相机摄影干货-人像篇】怎么拍出女神照" target="_blank">【手机/相机摄影干货-人像篇】怎么拍出女神照</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.coolapk.com/feed/16798741?shareKey=NDE1OGNlMjIxZmUyNWU1OTA1YTI~&shareUid=2744799&shareFrom=com.coolapk.market_10.0.1" title="【摄影干货】10种常见摄影场景的相机设置参数技巧" target="_blank">【摄影干货】10种常见摄影场景的相机设置参数技巧</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.coolapk.com/feed/16795411?shareKey=NjliYWNiYTViNmU2NWU1OTA3ZGI~&shareUid=2744799&shareFrom=com.coolapk.market_10.0.1" title="一份超详细的星轨拍摄指南" target="_blank">一份超详细的星轨拍摄指南</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -726,7 +899,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础语法"><span class="nav-number">1.</span> <span class="nav-text">基础语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落及区块引用"><span class="nav-number">2.</span> <span class="nav-text">段落及区块引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入链接和图片"><span class="nav-number">3.</span> <span class="nav-text">插入链接和图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表的段落使用"><span class="nav-number">4.1.</span> <span class="nav-text">列表的段落使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分割线"><span class="nav-number">5.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强调"><span class="nav-number">6.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入代码块"><span class="nav-number">7.</span> <span class="nav-text">插入代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入表格"><span class="nav-number">8.</span> <span class="nav-text">插入表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号处理"><span class="nav-number">9.</span> <span class="nav-text">特殊符号处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给文字上色"><span class="nav-number">10.</span> <span class="nav-text">给文字上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换文字字体和大小"><span class="nav-number">11.</span> <span class="nav-text">更换文字字体和大小</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础语法"><span class="nav-number">1.</span> <span class="nav-text">基础语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#段落及区块引用"><span class="nav-number">2.</span> <span class="nav-text">段落及区块引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入链接和图片"><span class="nav-number">3.</span> <span class="nav-text">插入链接和图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">4.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表的段落使用"><span class="nav-number">4.1.</span> <span class="nav-text">列表的段落使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分割线"><span class="nav-number">5.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强调"><span class="nav-number">6.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入代码块"><span class="nav-number">7.</span> <span class="nav-text">插入代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插入表格"><span class="nav-number">8.</span> <span class="nav-text">插入表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号处理"><span class="nav-number">9.</span> <span class="nav-text">特殊符号处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给文字上色"><span class="nav-number">10.</span> <span class="nav-text">给文字上色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给文字加划线"><span class="nav-number">11.</span> <span class="nav-text">给文字加划线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#让文字居中显示"><span class="nav-number">12.</span> <span class="nav-text">让文字居中显示</span></a></li></ol></div>
             
 
           </div>
@@ -753,6 +926,15 @@
   <span class="author" itemprop="copyrightHolder">Myfxl</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">2.7k</span>
+  
 </div>
 
 
@@ -764,10 +946,38 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i>
+<span id="busuanzi_container_site_uv">
+  本站总访客数:<span id="busuanzi_value_site_uv"></span>&nbsp;&nbsp;| 
+</span>
+<span id="busuanzi_container_site_pv">
+    &nbsp;本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+</div>
+</div>
+
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("02/27/2020 21:00:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
 
         
 
@@ -811,6 +1021,8 @@
   
 
 
+  
+
 
 
 
@@ -851,6 +1063,11 @@
     <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -863,6 +1080,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.4"></script>
@@ -908,9 +1132,348 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'r35r3qkqmwEapBV4gdQkYefE-gzGzoHsz',
+        appKey: 'JaoNM5p9P3Xtcig5jRErtzta',
+        placeholder: '在这里开始你的评论吧~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/blog/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
