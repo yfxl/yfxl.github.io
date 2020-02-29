@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>古风歌曲串烧</title>
+    <url>/blog/2020/02/29/%E6%AD%8C%E5%8D%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200" alt=""></p>
+<p>这次推荐的是一系列古风歌曲~ 相当好听哦</p>
+<a id="more"></a>
+<blockquote>
+<p>你是四月檐上雨，也是心上惊鸿客。</p>
+</blockquote>
+
+    <div id="aplayer-bthZQVAy" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="4889892077" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
+    ></div>
+
+]]></content>
+      <categories>
+        <category>音乐</category>
+        <category>歌单</category>
+      </categories>
+      <tags>
+        <tag>音乐</tag>
+        <tag>歌单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo快速食用方法</title>
     <url>/blog/2020/02/27/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>

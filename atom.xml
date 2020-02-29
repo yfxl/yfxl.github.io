@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://yfxl.gitee.io/blog/"/>
-  <updated>2020-02-28T12:32:32.109Z</updated>
+  <updated>2020-02-29T11:15:23.178Z</updated>
   <id>https://yfxl.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>古风歌曲串烧</title>
+    <link href="https://yfxl.gitee.io/blog/2020/02/29/%E6%AD%8C%E5%8D%95/"/>
+    <id>https://yfxl.gitee.io/blog/2020/02/29/%E6%AD%8C%E5%8D%95/</id>
+    <published>2020-02-29T11:07:58.000Z</published>
+    <updated>2020-02-29T11:15:23.178Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200" alt=""></p><p>这次推荐的是一系列古风歌曲~ 相当好听哦</p><a id="more"></a><blockquote><p>你是四月檐上雨，也是心上惊鸿客。</p></blockquote>    <div id="aplayer-bthZQVAy" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="4889892077" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"    ></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这次推荐的是一系列古风歌曲~ 相当好听哦&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="音乐" scheme="https://yfxl.gitee.io/blog/categories/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="歌单" scheme="https://yfxl.gitee.io/blog/categories/%E9%9F%B3%E4%B9%90/%E6%AD%8C%E5%8D%95/"/>
+    
+    
+      <category term="音乐" scheme="https://yfxl.gitee.io/blog/tags/%E9%9F%B3%E4%B9%90/"/>
+    
+      <category term="歌单" scheme="https://yfxl.gitee.io/blog/tags/%E6%AD%8C%E5%8D%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo快速食用方法</title>
