@@ -10,7 +10,7 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#fdae62">
+<meta name="theme-color" content="#222">
 
 
 
@@ -49,10 +49,6 @@
 
 
 
-  
-  
-  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -61,19 +57,19 @@
 
 <link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/blog/css/main.css?v=6.0.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=6.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=6.0.0">
 
 
-  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#fdae62">
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=6.0.0" color="#222">
 
 
 
@@ -84,8 +80,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/blog/atom.xml" title="Yfxl's Blog" type="application/atom+xml" />
 
@@ -94,12 +88,18 @@
 
 
 
+<meta name="description" content="一个咸鱼大学生     本网站基于Hexo制作，挂载于Gitee，使用主题为NexT，评论系统接入Valine。   网站用于技术练习及交流，若有侵权或建议请联系邮箱：yuefengxinglan@163.com 欢迎各位提出意见及建议~ 下面是给你们留言用的哦~ 有什么建议直接写出来吧:)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Yfxl&#39;s Blog">
-<meta property="og:url" content="https://yfxl.gitee.io/blog/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://yfxl.gitee.io/blog/about/index.html">
 <meta property="og:site_name" content="Yfxl&#39;s Blog">
+<meta property="og:description" content="一个咸鱼大学生     本网站基于Hexo制作，挂载于Gitee，使用主题为NexT，评论系统接入Valine。   网站用于技术练习及交流，若有侵权或建议请联系邮箱：yuefengxinglan@163.com 欢迎各位提出意见及建议~ 下面是给你们留言用的哦~ 有什么建议直接写出来吧:)">
+<meta property="og:image" content="https://yfxl.gitee.io/blog/about/avatar.png">
+<meta property="article:published_time" content="2020-02-28T07:39:36.000Z">
+<meta property="article:modified_time" content="2020-02-29T11:02:41.515Z">
 <meta property="article:author" content="Myfxl">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yfxl.gitee.io/blog/about/avatar.png">
 
 
 
@@ -108,9 +108,11 @@
   var CONFIG = {
     root: '/blog/',
     scheme: 'Pisces',
-    version: '5.1.4',
+    version: '6.0.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
@@ -129,20 +131,11 @@
 
 
 
-  <link rel="canonical" href="https://yfxl.gitee.io/blog/"/>
+  <link rel="canonical" href="https://yfxl.gitee.io/blog/about/"/>
 
 
 
 
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
-  daovoice('init', {
-      app_id: "02a47b17"
-    });
-  daovoice('update');
-  </script>
 
   <title>Yfxl's Blog</title>
   
@@ -171,7 +164,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
+      <div class="header-inner"> <div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
@@ -213,6 +206,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-tags">
           <a href="/blog/tags/" rel="section">
             
@@ -243,12 +246,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/blog/about/" rel="section">
+        <li class="menu-item menu-item-schedule">
+          <a href="/blog/schedule/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
             
-            关于
+            日程表
           </a>
         </li>
       
@@ -324,7 +327,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -350,25 +353,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-29T19:07:58+08:00">
-                2020-02-29
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-29T19:07:58+08:00">2020-02-29</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:15:23+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -423,51 +412,9 @@
 
           
           
-             <span id="/blog/2020/02/29/%E6%AD%8C%E5%8D%95/" class="leancloud_visitors" data-flag-title="古风歌曲串烧">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  32
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -546,7 +493,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -572,25 +519,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-25T11:16:25+08:00">
-                2020-02-25
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-25T11:16:25+08:00">2020-02-25</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:18:30+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -645,51 +578,9 @@
 
           
           
-             <span id="/blog/2020/02/25/myfavoritemusic/" class="leancloud_visitors" data-flag-title="音乐推荐">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  303
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -776,7 +667,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -802,25 +693,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-22T21:22:58+08:00">
-                2020-02-22
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-22T21:22:58+08:00">2020-02-22</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-28T19:26:38+08:00">
-                2020-02-28
-              </time>
             
           </span>
 
@@ -864,51 +741,9 @@
 
           
           
-             <span id="/blog/2020/02/22/markdown/" class="leancloud_visitors" data-flag-title="Markdown的使用方法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  1.8k
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  7
-                </span>
-              
-            </div>
           
 
           
@@ -988,7 +823,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1014,25 +849,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-26T18:50:59+08:00">
-                2020-02-26
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-26T18:50:59+08:00">2020-02-26</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:28:33+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -1087,51 +908,9 @@
 
           
           
-             <span id="/blog/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/" class="leancloud_visitors" data-flag-title="如何在PR里拉出舒服的曲线拉镜">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  23
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1213,7 +992,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1239,25 +1018,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T21:53:52+08:00">
-                2020-02-24
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T21:53:52+08:00">2020-02-24</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:17:40+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -1312,51 +1077,9 @@
 
           
           
-             <span id="/blog/2020/02/24/music2895575219netease/" class="leancloud_visitors" data-flag-title="音阙诗听的二十四节气">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  20
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1438,7 +1161,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1464,25 +1187,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T21:34:23+08:00">
-                2020-02-24
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T21:34:23+08:00">2020-02-24</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:18:08+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -1537,51 +1246,9 @@
 
           
           
-             <span id="/blog/2020/02/24/music3040466047netease/" class="leancloud_visitors" data-flag-title="睡前舒心纯音乐哄君入眠">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  127
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1665,7 +1332,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1691,25 +1358,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T12:32:55+08:00">
-                2020-02-24
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-24T12:32:55+08:00">2020-02-24</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-29T19:17:14+08:00">
-                2020-02-29
-              </time>
             
           </span>
 
@@ -1764,51 +1417,9 @@
 
           
           
-             <span id="/blog/2020/02/24/music2119983629neteasse/" class="leancloud_visitors" data-flag-title="日系女声｜在梦中邂逅你至温至柔的嗓音">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  143
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -1892,7 +1503,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myfxl">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/blog/images/avatar.png">
+      <meta itemprop="image" content="/blog/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1918,25 +1529,11 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-27T21:09:24+08:00">
-                2020-02-27
-              </time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-27T21:09:24+08:00">2020-02-27</time>
             
 
             
-              <span class="post-meta-divider">|</span>
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2020-02-28T20:32:32+08:00">
-                2020-02-28
-              </time>
             
           </span>
 
@@ -1980,51 +1577,9 @@
 
           
           
-             <span id="/blog/2020/02/27/hello-world/" class="leancloud_visitors" data-flag-title="Hexo快速食用方法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
 
           
 
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  313
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
           
 
           
@@ -2122,10 +1677,6 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/blog/images/avatar.png"
-                alt="Myfxl" />
-            
               <p class="site-author-name" itemprop="name">Myfxl</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -2176,34 +1727,6 @@
             </div>
           
 
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/yfxl" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:yuefengxinglan@163.com" target="_blank" title="E-Mail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://plus.google.com/yuefengxinglan" target="_blank" title="Google">
-                      
-                        <i class="fa fa-fw fa-google"></i>Google</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://weibo.com/3995918196" target="_blank" title="Weibo">
-                      
-                        <i class="fa fa-fw fa-weibo"></i>Weibo</a>
-                  </span>
-                
-            </div>
           
 
           
@@ -2275,52 +1798,23 @@
   <span class="author" itemprop="copyrightHolder">Myfxl</span>
 
   
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-      <span class="post-meta-item-text">Site words total count&#58;</span>
-    
-    <span title="Site words total count">2.8k</span>
+
   
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
+  <span class="post-meta-divider">|</span>
 
 
 
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.0.0</div>
 
-<div class="powered-by">
-<i class="fa fa-user-md"></i>
-<span id="busuanzi_container_site_uv">
-  本站总访客数:<span id="busuanzi_value_site_uv"></span>&nbsp;&nbsp;| 
-</span>
-<span id="busuanzi_container_site_pv">
-    &nbsp;本站总访问量<span id="busuanzi_value_site_pv"></span>次
-</span>
-</div>
-</div>
 
-<script>
-    var now = new Date(); 
-    function createtime() { 
-        var grt= new Date("02/27/2020 21:00:00");//此处修改你的建站时间或者网站上线时间 
-        now.setTime(now.getTime()+250); 
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-    } 
-setInterval("createtime()",250);
-</script>
+
 
         
 <div class="busuanzi-count">
@@ -2382,10 +1876,10 @@ setInterval("createtime()",250);
 
 
 
-  
 
 
-  
+
+
 
 
 
@@ -2404,16 +1898,6 @@ setInterval("createtime()",250);
 
   
   
-    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -2422,23 +1906,13 @@ setInterval("createtime()",250);
     <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=6.0.0"></script>
 
-  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=6.0.0"></script>
 
 
 
@@ -2446,9 +1920,9 @@ setInterval("createtime()",250);
   
 
 
-  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=6.0.0"></script>
 
-  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=6.0.0"></script>
 
 
 
@@ -2457,7 +1931,7 @@ setInterval("createtime()",250);
   
 
 
-  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=6.0.0"></script>
 
 
 
@@ -2497,7 +1971,7 @@ setInterval("createtime()",250);
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail';
+    var guest = 'nick,mail,link';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
@@ -2840,113 +2314,6 @@ setInterval("createtime()",250);
 
 
   
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("r35r3qkqmwEapBV4gdQkYefE-gzGzoHsz", "JaoNM5p9P3Xtcig5jRErtzta");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
 
   
 
