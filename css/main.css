@@ -1111,7 +1111,7 @@ pre .javascript .function {
   color: #fff;
   background: #222;
   border-bottom: none;
-  color: #ffb6c1 !important;
+  color: #ffed99 !important;
 }
 .brand:hover {
   color: #fff;
@@ -1864,7 +1864,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5253d5;
+  background: #6affd6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1959,7 +1959,6 @@ pre .javascript .function {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
-  white-space: nowrap;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
@@ -3073,8 +3072,8 @@ body {
   border-bottom: 1px solid #fdae62;
 }
 ::selection {
-  background: #00c4b6;
-  color: #fdae62;
+  background: #fef176;
+  color: #ffaa7a;
 }
 ::-moz-selection {
   background: #00c4b6;
@@ -3113,10 +3112,10 @@ body {
   transition-delay: 0s;
 }
 .footer-inner {
-  color: #ffb6c1;
+  color: #ffed99;
 }
 #sidebar p,
 #sidebar span,
 #sidebar a {
-  color: #fdae62;
+  color: #ffa300;
 }
