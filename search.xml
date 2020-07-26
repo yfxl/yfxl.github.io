@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>HTML用法初阶</title>
-    <url>/blog/2020/03/02/HTML/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><blockquote>
+    <url>/2020/03/02/HTML/</url>
+    <content><![CDATA[<blockquote>
 <p>本文整合自w3school。</p>
 </blockquote>
 <h2 id="HTML简单描述"><a href="#HTML简单描述" class="headerlink" title="HTML简单描述"></a>HTML简单描述</h2><p>HTML是一种标记型语言，全程<acronym title="Hyper Text Markup Language">HTML</acronym>。它不是编程语言，简单来说，HTML是用标记标签来标记网页。</p>
@@ -19,7 +19,7 @@
 
 <head>
 <title>我的第一个 HTML 页面</title>
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/blog/atom.xml" title="Yfxl's Blog" type="application/atom+xml">
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Yfxl's Blog" type="application/atom+xml">
 </head>
 
 <body>
@@ -358,7 +358,7 @@ Here is some Hebrew text
 <p>
 您也可以使用图像来作链接：
 <a href="https://www.w3school.com.cn/tiy/t.asp?f=html_imglink" target="_blank" rel="noopener">
-<img border="0" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1583156060&di=5e841338047296b174c9f18c27b28096&src=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=1000x667" />
+<img border="0" src= "/img/loading.gif" data-src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1583156060&di=5e841338047296b174c9f18c27b28096&src=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=1000x667" />
 </a>
 </p>
 
@@ -973,12 +973,14 @@ I have an airplane:
 <br /><br />
 <input type="submit" value="发送">
 <input type="reset" value="重置">
+</form>
+## 图像
 
-<h2 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h2><h3 id="插入图像"><a href="#插入图像" class="headerlink" title="插入图像"></a>插入图像</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">一幅图像：</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/source/images/background.jpg"</span> <span class="attr">width</span>=<span class="string">"128"</span> <span class="attr">height</span>=<span class="string">"128"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="插入图像"><a href="#插入图像" class="headerlink" title="插入图像"></a>插入图像</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">一幅图像：</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/source/images/background.jpg"</span> <span class="attr">width</span>=<span class="string">"128"</span> <span class="attr">height</span>=<span class="string">"128"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>
 一幅图像：
-<img src="http://attach.bbs.miui.com/forum/201110/07/082726lghakmgjmgnah9aa.jpg" width="128" height="128" />
+<img src= "/img/loading.gif" data-src="http://attach.bbs.miui.com/forum/201110/07/082726lghakmgjmgnah9aa.jpg" width="128" height="128" />
 </p>
 
 <h3 id="浮动图像"><a href="#浮动图像" class="headerlink" title="浮动图像"></a>浮动图像</h3><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">&lt;img src =<span class="string">"/i/eg_cute.gif"</span> <span class="meta">align</span> =<span class="string">"left"</span>&gt; </span><br><span class="line">带有图像的一个段落。图像的 <span class="meta">align</span> 属性设置为 <span class="string">"left"</span>。图像将浮动到文本的左侧。</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;img src =<span class="string">"/i/eg_cute.gif"</span> <span class="meta">align</span> =<span class="string">"right"</span>&gt; </span><br><span class="line">带有图像的一个段落。图像的 <span class="meta">align</span> 属性设置为 <span class="string">"right"</span>。图像将浮动到文本的右侧。</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
@@ -999,15 +1001,15 @@ I have an airplane:
   </entry>
   <entry>
     <title>古风歌曲串烧</title>
-    <url>/blog/2020/02/29/%E6%AD%8C%E5%8D%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200" alt=""></p>
+    <url>/2020/02/29/%E6%AD%8C%E5%8D%95/</url>
+    <content><![CDATA[<p><img src= "/img/loading.gif" data-src="https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200" alt=""></p>
 <p>这次推荐的是一系列古风歌曲~ 相当好听哦</p>
 <a id="more"></a>
 <blockquote>
 <p>你是四月檐上雨，也是心上惊鸿客。</p>
 </blockquote>
 
-    <div id="aplayer-buHjIyfw" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-RdBIDLmQ" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="4889892077" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
     ></div>
 
@@ -1023,8 +1025,8 @@ I have an airplane:
   </entry>
   <entry>
     <title>Hexo快速食用方法</title>
-    <url>/blog/2020/02/27/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    <url>/2020/02/27/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -1054,9 +1056,9 @@ I have an airplane:
   </entry>
   <entry>
     <title>如何在PR里拉出舒服的曲线拉镜</title>
-    <url>/blog/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><center>
-    <a href=https://www.bilibili.com/video/av82685934><img src="https://cdn.jsdelivr.net/gh/yfxl/mypic/picture/5c482c99-87ef-4cea-a030-e5bfe77e2fda.jpeg" height="200" width="300"></a>
+    <url>/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/</url>
+    <content><![CDATA[<center>
+    <a href=https://www.bilibili.com/video/av82685934><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/yfxl/mypic/picture/5c482c99-87ef-4cea-a030-e5bfe77e2fda.jpeg" height="200" width="300"></a>
 </center>
 
 <center><a href=https://www.bilibili.com/video/av82685934>如何在PR里拉出舒服的曲线拉镜</a></center>
@@ -1078,13 +1080,13 @@ I have an airplane:
   </entry>
   <entry>
     <title>音乐推荐</title>
-    <url>/blog/2020/02/25/myfavoritemusic/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p>这里是我最喜爱的歌，最难以忘怀的记忆，都潜藏在歌中。</p>
+    <url>/2020/02/25/myfavoritemusic/</url>
+    <content><![CDATA[<p>这里是我最喜爱的歌，最难以忘怀的记忆，都潜藏在歌中。</p>
 <h2 id="烟雨行舟"><a href="#烟雨行舟" class="headerlink" title="烟雨行舟"></a>烟雨行舟</h2><blockquote>
 <p>原唱伦桑，但是这里推荐的是司南的版本</p>
 </blockquote>
 
-    <div id="aplayer-XNBaslJP" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-yrbxcckM" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1301884692" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
@@ -1095,7 +1097,7 @@ I have an airplane:
 <p>金志文的歌里我最喜这首，只因他唱出了人走茶凉。</p>
 </blockquote>
 
-    <div id="aplayer-VLDJXzeC" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-FlaCNddY" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="27927640" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
@@ -1105,7 +1107,7 @@ I have an airplane:
 <p>毛不易从明日之子以来最令人温暖的一首歌，把生活唱的淋漓尽致。</p>
 </blockquote>
 
-    <div id="aplayer-wluHsMOw" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-gzghZfPC" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1417862065" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
@@ -1122,97 +1124,9 @@ I have an airplane:
       </tags>
   </entry>
   <entry>
-    <title>音阙诗听的二十四节气</title>
-    <url>/blog/2020/02/24/music2895575219netease/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="http://p3.music.126.net/g4m_P2jHDEnu8jT2mcseLw==/109951164601635533.jpg?param=200y200" alt=""></p>
-<blockquote>
-<p>网易云@音阙诗听   2019-07-23创建</p>
-</blockquote>
-<p>喏，这就是音阙诗听。</p>
-<a id="more"></a>
-
-    <div id="aplayer-LAlAeyDR" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="2895575219" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
-    ></div>]]></content>
-      <categories>
-        <category>音乐</category>
-        <category>歌单</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-        <tag>歌单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>睡前舒心纯音乐哄君入眠</title>
-    <url>/blog/2020/02/24/music3040466047netease/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="http://p3.music.126.net/JEYDQ6MV0C-dPqiqojQibw==/109951164442575315.jpg?param=200y200" alt=""></p>
-<blockquote>
-<p>网易云@小文艺少女酱  2019-10-22创建</p>
-</blockquote>
-<blockquote>
-<p>拥抱了一天的世界，有时候也需要静下心来陶冶心境。</p>
-</blockquote>
-<a id="more"></a>
-<blockquote>
-<p>小时候，睡前总要赖着爸爸妈妈给自己讲些有趣的故事，那时候的单纯，只需要一点小幻想就可以美美的入梦。</p>
-</blockquote>
-<blockquote>
-<p>长大以后，不再相信童话故事，而这些舒心的纯音乐是心灵的净化剂，没有打扰，只有美妙的旋律和那甜美的心境。</p>
-</blockquote>
-
-    <div id="aplayer-StOepTjY" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="3040466047" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
-    ></div>]]></content>
-      <categories>
-        <category>音乐</category>
-        <category>歌单</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-        <tag>歌单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>日系女声｜在梦中邂逅你至温至柔的嗓音</title>
-    <url>/blog/2020/02/24/music2119983629neteasse/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p><img src="https://p1.music.126.net/XKow37ySTBMa6H9SLUCIyg==/109951163257096836.jpg?param=200y200" alt=""> </p>
-<blockquote>
-<p>网易云@Neko_喵喵喵     2018-02-27创建</p>
-</blockquote>
-<blockquote>
-<p>你的声音<br> 萦绕于我耳畔<br> 至温至柔<br> 无法忘怀</p>
-</blockquote>
-<a id="more"></a>
-<blockquote>
-<p>我不停在想<br> 如果我要是和你一样那该多好啊<br> 那样的话<br> 我们两个人就会是一个世界里的了</p>
-</blockquote>
-<blockquote>
-<p>可是……<br> 没有如果<br> 我们的轨迹终究不能交汇到一起</p>
-</blockquote>
-<blockquote>
-<p>到最后<br> 我所能追忆的<br> 唯一能追忆的<br> 只有你的歌声</p>
-</blockquote>
-<blockquote>
-<p>（封面武大樱花，强烈推荐大家有空去欣赏下，在现场的感觉和在网上看真的不一样）</p>
-</blockquote>
-
-    <div id="aplayer-JshOsSPP" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="2119983629" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
-    ></div>]]></content>
-      <categories>
-        <category>音乐</category>
-        <category>歌单</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-        <tag>歌单</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown的使用方法</title>
-    <url>/blog/2020/02/22/markdown/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\blog\assets\css\APlayer.min.css"><script src="\blog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\blog\assets\js\Meting.min.js"></script><p>小白现码的使用方法，以后再完善。</p>
+    <url>/2020/02/22/markdown/</url>
+    <content><![CDATA[<p>小白现码的使用方法，以后再完善。</p>
 <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><p>Markdown 支持6种大小标题，对应的是html标签 h1 ~ h6 :</p>
 <figure class="highlight clean"><table><tr><td class="code"><pre><span class="line"># h1</span><br><span class="line">## h2</span><br><span class="line">### h3</span><br><span class="line">#### h4</span><br><span class="line">##### h5</span><br><span class="line">###### h6</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -1236,7 +1150,7 @@ I have an airplane:
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">点击跳转至百度</span>](<span class="link">http://www.baidu.com</span>)</span><br><span class="line">![<span class="string">图片</span>](<span class="link">https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1582387340843&amp;di=dc6e375ced84edbf52d927777bb0cff1&amp;imgtype=0&amp;src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg</span>)</span><br></pre></td></tr></table></figure>
 
 <p>显示效果如下：</p>
-<p><a href="http://www.baidu.com" target="_blank" rel="noopener">点击跳转至百度</a><br><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg" alt="图片"></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">点击跳转至百度</a><br><img src= "/img/loading.gif" data-src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582387340843&di=dc6e375ced84edbf52d927777bb0cff1&imgtype=0&src=http%3A%2F%2Fimgq.duitang.com%2Fuploads%2Fitem%2F201305%2F12%2F20130512213003_A5Kzc.jpeg" alt="图片"></p>
 <blockquote>
 <p>注意：图片前面有一个感叹号，别忘记加^-^</p>
 </blockquote>
