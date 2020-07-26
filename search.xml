@@ -1000,30 +1000,6 @@ I have an airplane:
       </tags>
   </entry>
   <entry>
-    <title>古风歌曲串烧</title>
-    <url>/2020/02/29/%E6%AD%8C%E5%8D%95/</url>
-    <content><![CDATA[<p><img src= "/img/loading.gif" data-src="https://p2.music.126.net/XE1XFkkDYrEW_eXFFlsSYQ==/109951164202821890.jpg?param=200y200" alt=""></p>
-<p>这次推荐的是一系列古风歌曲~ 相当好听哦</p>
-<a id="more"></a>
-<blockquote>
-<p>你是四月檐上雨，也是心上惊鸿客。</p>
-</blockquote>
-
-    <div id="aplayer-RdBIDLmQ" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="4889892077" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
-    ></div>
-
-]]></content>
-      <categories>
-        <category>音乐</category>
-        <category>歌单</category>
-      </categories>
-      <tags>
-        <tag>音乐</tag>
-        <tag>歌单</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo快速食用方法</title>
     <url>/2020/02/27/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -1040,42 +1016,421 @@ I have an airplane:
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<div class="note info">
+            <p>以上为官方文档，以下为手把手教学时间：</p>
+          </div>
+
+
+
+<!-- wp:paragraph -->
+<p>众所周知，买一个服务器是很贵的，大多数小伙伴是不愿意花这个钱的。有一个选项摆在了各位面前，那就是hexo。通过在仓库上搭载静态网页，你也可以免费搭建一个你自己的博客。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-1">新建仓库</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>这步是万事开头的一步，先访问<a href="https://github.com" target="_blank" rel="noreferrer noopener">https://github.com</a>创建一个账号吧，然后新建仓库<code>&lt;user-name&gt;.github.io</code>，其中<code>&lt;user-name&gt;</code>是你要给你的博客起的名字，创建好后<code>&lt;user-name&gt;.github.io</code>就是你的网址啦~</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>我创建的hexo博客是<a href="https://yfxl.github.io/" target="_blank" rel="noreferrer noopener">https://yfxl.github.io/</a>，欢迎大家访问。（可能需要科学上网，毕竟是国外的服务器哈）</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-2">下载Git</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>访问<a href="https://gitforwindows.org/" target="_blank" rel="noreferrer noopener">https://gitforwindows.org/</a>，点击Download Git进行下载，如果访问不了的同学可以点击我分享的链接<a href="https://yfxl.lanzous.com/git-2-26-2-64" target="_blank" rel="noopener">https://yfxl.lanzous.com/git-2-26-2-64</a>进行下载。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>如果你是linux系统，直接<code>sudo apt-get install git</code>就行了。然后用<code>git --version</code>查看一下版本。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-3">下载Nodejs</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>官网下载<a href="https://nodejs.org/en/download" target="_blank" rel="noopener">https://nodejs.org/en/download</a>选择LTS版本对应系统的下载就行了。访问不上的可以看我分享的网址<a href="https://yfxl.lanzous.com/s/nodejs" target="_blank" rel="noopener">https://yfxl.lanzous.com/s/nodejs</a>（只有windows和macOS的）</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>linux:</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>sudo apt-get install nodejs
+sudo apt-get install npm</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>这一步可能会很慢，耐心等待。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>安装完后检查一下有没有安装成功：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>npm -v
+node -v</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>其实你也可以用<code>git bash</code>来输入Linux命令快速安装，省时省力。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>在一个合适的位置新建文件夹<code>&lt;blog&gt;</code>，右键点击git bash，就出现git终端了，之后就输入上文Linux的命令就可以啦。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:image {"id":336,"className":"size-large is-resized is-style-default"} -->
+<figure class="wp-block-image size-large is-resized is-style-default"><img src= "/img/loading.gif" data-src="https://blog.yfxl.site/wp-content/uploads/2020/04/2020042421200790.png" alt="" class="wp-image-336"/></figure>
+<!-- /wp:image -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-4">安装Hexo</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>在上文你已经创建好的<code>&lt;blog&gt;</code>文件夹下，右键git bash，然后输入以下命令：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>npm install -g hexo-cli</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>然后用<code>hexo -v</code>检查一下版本。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>接下来，执行初始化：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>hexo init myblog</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>其中的myblog是你的博客文件夹名，可以随便起。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>接下来：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>cd myblog    //进入myblog文件夹
+npm install</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>新建完成后，文件夹里应该包含这样几个文件：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:list -->
+<ul><li>_config.yml //配置文件，可配置参数</li><li>package.json //存放插件信息</li><li>scaffolds //生成文章的一些模板</li><li>source //存放文章</li><li>themes //存放主题</li><li>node_modules //依赖包</li></ul>
+<!-- /wp:list -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>之后终端中键入：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>hexo g
+hexo s
+//嫌麻烦可以在一行输入hexo g &amp;&amp; hexo s</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>终端中出现这样的字就是成功了：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:image {"id":339,"className":"size-large is-style-default"} -->
+<figure class="wp-block-image size-large is-style-default"><img src= "/img/loading.gif" data-src="https://blog.yfxl.site/wp-content/uploads/2020/04/2020042421411726.png" alt="" class="wp-image-339"/></figure>
+<!-- /wp:image -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>打开浏览器，网址输入<a href="4000">localhost:4000</a>就可以看到初始hexo页面了，大概长这样：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:image {"id":338,"className":"size-large is-style-default"} -->
+<figure class="wp-block-image size-large is-style-default"><img src= "/img/loading.gif" data-src="https://blog.yfxl.site/wp-content/uploads/2020/04/2020042421351391-1024x530.png" alt="" class="wp-image-338"/></figure>
+<!-- /wp:image -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>这个是hexo的默认主题landscape，如果不满意后期可以更换主题。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>终端中使用ctrl+c可以关闭服务。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-5">生成SSH</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>回到git bash中，键入</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>git config --global user.name "yourname"
+git config --global user.email "youremail"</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>这里的yourname和youremail填的是你创建github用的账户名和邮箱，以便对应账户。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>可以用下面两条命令检查一下自己输没输对：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>git config user.name
+git config user.email</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>然后我们创建SSH，youremail也是一样，键入后一路回车：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>ssh-keygen -t rsa -C "youremail"</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>创建完成后SSH密钥是保存在你的设备上了，windows的默认路径是<code>C:UsersAdministator.ssh</code>，找到这个文件夹，里面存放着两个文件<code>id_rsa</code>和<code>id_rsa.pub</code>。我们需要的是<code>id_rsa.pub</code>的信息。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>右键用记事本打开<code>id_rsa.pub</code>，复制里面的信息。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>打开 GitHub ，依次点击 头像 –&gt;Settings–&gt;SSH and GPG keys –&gt; Add SSH key，title随便写，将复制的密钥粘贴到 key 输入框，最后点击 Add Key ，SSH KEY 配置成功，如下图所示：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:image {"id":340,"className":"size-large is-style-default"} -->
+<figure class="wp-block-image size-large is-style-default"><img src= "/img/loading.gif" data-src="https://blog.yfxl.site/wp-content/uploads/2020/04/2020042421551841-1024x505.png" alt="" class="wp-image-340"/></figure>
+<!-- /wp:image -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>保存之后，在终端输入<code>ssh -T git@github.com</code>查看是否成功。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:heading -->
+<h2 id="-6">部署到Github</h2>
+<!-- /wp:heading -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>在终端中，键入以下内容下载一个部署插件：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>npm install hexo-deployer-git --save</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>之后打开配置文件_config.yml，这里作者在用Notepad++，方便好用。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>右键打开，如果你用记事本打开，别忘了修改编码为UTF-8.</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>找到最后面的deploy部分，修改为：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>deploy:
+  type: git
+  repo: https://github.com/YourgithubName/YourgithubName.github.io.git
+  branch: master</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>注意，缩进一定要有，缩进是识别包含关系的。YourgithubName是你的账户名。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>最后一步，终端键入：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>hexo clean
+hexo generate
+hexo deploy</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>嫌长的话用简称代替也可以：</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>hexo clean
+hexo g
+hexo d
+//或者一行hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
+<!-- /wp:code -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>deploy的时候可能需要你输入账户密码。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
+<!-- wp:paragraph -->
+<p>完成后，在浏览器输入<code>https://yourname.github.io</code>就能看到你的文章了。</p>
+<!-- /wp:paragraph -->
+
+<p></p>
+
 <h2 id="高阶用法"><a href="#高阶用法" class="headerlink" title="高阶用法"></a>高阶用法</h2><h3 id="添加歌单（网易云）"><a href="#添加歌单（网易云）" class="headerlink" title="添加歌单（网易云）"></a>添加歌单（网易云）</h3><figure class="highlight clojure"><table><tr><td class="code"><pre><span class="line">&#123;% meting <span class="string">"歌单编号"</span> <span class="string">"netease"</span> <span class="string">"playlist"</span> <span class="string">"theme:#FF4081"</span> <span class="string">"mode:circulation"</span> <span class="string">"mutex:true"</span> <span class="string">"listmaxheight:340px"</span> <span class="string">"preload:auto"</span> %&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="单个歌曲形成歌单"><a href="#单个歌曲形成歌单" class="headerlink" title="单个歌曲形成歌单"></a>单个歌曲形成歌单</h3><figure class="highlight clojure"><table><tr><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line"><span class="string">"narrow"</span><span class="symbol">:false</span>,//播放器袖珍风格</span><br><span class="line"><span class="string">"autoplay"</span><span class="symbol">:true</span>,</span><br><span class="line"><span class="string">"mode"</span>:<span class="string">"random"</span>,//可选：random(随机播放),single(单曲播放),circulation(循环播放),order(列表播放)</span><br><span class="line"><span class="string">"showlrc"</span>:<span class="number">3</span>,//可选：歌词显示配置项，<span class="number">1</span><span class="number">-3</span></span><br><span class="line"><span class="string">"mutex"</span><span class="symbol">:true</span>,//开启时如果该页面有其他aplayer播放，该播放器会暂停</span><br><span class="line"><span class="string">"theme"</span>:<span class="string">"#e6d0b2"</span>,//播放器风格色彩设置，默认为#b7daff</span><br><span class="line"><span class="string">"preload"</span>:<span class="string">"metadata"</span>,//音乐文件预载入模式，可选：<span class="string">"none"</span>,<span class="string">"metadata"</span>,<span class="string">"auto"</span>,默认auto</span><br><span class="line"><span class="string">"listmaxheight"</span>:<span class="string">"513px"</span>,//该播放列表的最大长度</span><br><span class="line"><span class="string">"music"</span>:[</span><br><span class="line">&#123;</span><br><span class="line"><span class="string">"title"</span>:<span class="string">"CoCo"</span>,</span><br><span class="line"><span class="string">"author"</span>:<span class="string">"Jeff Williams"</span>,</span><br><span class="line"><span class="string">"url"</span>:<span class="string">"caffeine.mp3"</span>.</span><br><span class="line"><span class="string">"pic"</span>:<span class="string">"caffeine.jpeg"</span>,</span><br><span class="line"><span class="string">"lrc"</span>:<span class="string">"caffeine.txt"</span></span><br><span class="line">&#125;</span><br><span class="line">&#123;</span><br><span class="line"><span class="string">"title"</span>:<span class="string">"アイロニ"</span>,</span><br><span class="line"><span class="string">"author"</span>:<span class="string">"鹿乃"</span>,</span><br><span class="line"><span class="string">"url"</span>:<span class="string">"irony.mp3"</span>,</span><br><span class="line"><span class="string">"pic"</span>:<span class="string">"irony.jpg"</span>&#125;]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endaplayer %&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h3><p>粘贴以下代码：</p>
 <figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">&#123;<span class="meta">%</span> dplayer <span class="string">"url=https://player.bilibili.com/player.html?aid=82685934&amp;cid=141472427&amp;page=1"</span> <span class="string">"pic=https://i0.hdslb.com/bfs/archive/1cd3e83b65ffc53a8b20178d0fff79dc638788f5.jpg"</span> <span class="string">"loop=yes"</span> <span class="string">"theme=#fadfa3"</span> <span class="string">"autoplay=false"</span> <span class="string">"token=tokendemo"</span> <span class="meta">%</span>&#125;</span><br></pre></td></tr></table></figure>
 
-]]></content>
+<h3 id="note提示块语法"><a href="#note提示块语法" class="headerlink" title="note提示块语法"></a>note提示块语法</h3><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;%<span class="built_in"> note default </span>%&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%<span class="built_in"> note </span>primary no-icon %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%<span class="built_in"> note </span>success %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%<span class="built_in"> note </span><span class="builtin-name">info</span> %&#125;</span><br><span class="line"><span class="builtin-name">info</span> 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%<span class="built_in"> note </span><span class="builtin-name">warning</span> %&#125;</span><br><span class="line"><span class="builtin-name">warning</span> 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;%<span class="built_in"> note </span>danger %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note warning">
+            <p>本部分来源于主题Butterfly作者文档，不确定其他主题是否有效。</p>
+          </div>]]></content>
       <categories>
         <category>教程</category>
       </categories>
       <tags>
         <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何在PR里拉出舒服的曲线拉镜</title>
-    <url>/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/</url>
-    <content><![CDATA[<center>
-    <a href=https://www.bilibili.com/video/av82685934><img src= "/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/yfxl/mypic/picture/5c482c99-87ef-4cea-a030-e5bfe77e2fda.jpeg" height="200" width="300"></a>
-</center>
-
-<center><a href=https://www.bilibili.com/video/av82685934>如何在PR里拉出舒服的曲线拉镜</a></center>
-<a id="more"></a>
----
-
-<blockquote>
-<p>Bilibili UP主@ZouzouX_ 2020-01-09创作</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>教程</category>
-        <category>视频</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-        <tag>视频</tag>
       </tags>
   </entry>
   <entry>
@@ -1086,7 +1441,7 @@ I have an airplane:
 <p>原唱伦桑，但是这里推荐的是司南的版本</p>
 </blockquote>
 
-    <div id="aplayer-yrbxcckM" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-UyQQFpPT" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1301884692" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
@@ -1097,7 +1452,7 @@ I have an airplane:
 <p>金志文的歌里我最喜这首，只因他唱出了人走茶凉。</p>
 </blockquote>
 
-    <div id="aplayer-FlaCNddY" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-qlNLwraN" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="27927640" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 
@@ -1107,7 +1462,7 @@ I have an airplane:
 <p>毛不易从明日之子以来最令人温暖的一首歌，把生活唱的淋漓尽致。</p>
 </blockquote>
 
-    <div id="aplayer-gzghZfPC" class="aplayer aplayer-tag-marker meting-tag-marker"
+    <div id="aplayer-FsvAWutj" class="aplayer aplayer-tag-marker meting-tag-marker"
          data-id="1417862065" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#555"
     ></div>
 

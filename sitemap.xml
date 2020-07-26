@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yfxl.gitee.io/blog/2020/03/02/HTML/</loc>
+    
+    <lastmod>2020-07-26T09:19:29.106Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yfxl.gitee.io/blog/2020/02/25/myfavoritemusic/</loc>
+    
+    <lastmod>2020-07-26T09:18:02.655Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yfxl.gitee.io/blog/2020/02/27/hello-world/</loc>
+    
+    <lastmod>2020-07-26T09:15:48.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yfxl.gitee.io/blog/2020/02/22/markdown/</loc>
+    
+    <lastmod>2020-07-26T09:02:20.188Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yfxl.gitee.io/blog/music/index.html</loc>
     
     <lastmod>2020-07-26T07:42:19.024Z</lastmod>
@@ -30,37 +58,9 @@
   </url>
   
   <url>
-    <loc>https://yfxl.gitee.io/blog/2020/03/02/HTML/</loc>
-    
-    <lastmod>2020-04-08T07:23:53.150Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yfxl.gitee.io/blog/2020/02/26/%E5%A6%82%E4%BD%95%E5%9C%A8PR%E9%87%8C%E6%8B%89%E5%87%BA%E8%88%92%E6%9C%8D%E7%9A%84%E6%9B%B2%E7%BA%BF%E6%8B%89%E9%95%9C/</loc>
-    
-    <lastmod>2020-02-29T11:28:33.824Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yfxl.gitee.io/blog/2020/02/25/myfavoritemusic/</loc>
-    
-    <lastmod>2020-02-29T11:18:30.788Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yfxl.gitee.io/blog/categories/index.html</loc>
     
     <lastmod>2020-02-29T11:16:48.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yfxl.gitee.io/blog/2020/02/29/%E6%AD%8C%E5%8D%95/</loc>
-    
-    <lastmod>2020-02-29T11:15:23.178Z</lastmod>
     
   </url>
   
@@ -72,23 +72,9 @@
   </url>
   
   <url>
-    <loc>https://yfxl.gitee.io/blog/2020/02/27/hello-world/</loc>
-    
-    <lastmod>2020-02-28T12:32:32.109Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yfxl.gitee.io/blog/schedule/index.html</loc>
     
     <lastmod>2020-02-28T11:41:50.175Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yfxl.gitee.io/blog/2020/02/22/markdown/</loc>
-    
-    <lastmod>2020-02-28T11:26:38.386Z</lastmod>
     
   </url>
   
