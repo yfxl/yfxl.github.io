@@ -1,401 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HTML用法初阶</title>
-    <url>/2020/03/02/HTML/</url>
-    <content><![CDATA[<blockquote>
-<p>本文整合自w3school。</p>
-</blockquote>
-<h2 id="HTML简单描述"><a href="#HTML简单描述" class="headerlink" title="HTML简单描述"></a>HTML简单描述</h2><p>HTML是一种标记型语言，全程<acronym title="Hyper Text Markup Language">HTML</acronym>。它不是编程语言，简单来说，HTML是用标记标签来标记网页。</p>
-<p>HTML标签通常是成对存在的，用尖括号&lt; &gt;包围。</p>
-<p>本文由于篇幅原因，不长篇大论，将以实例的形式展现。大多数人还是能看懂的~</p>
-<a id="more"></a>
-<p>笔者本人推荐使用Notepad++进行编辑，因为这款软件功能强大，几乎所有你能想得到的编程语言和标记语言它都能识别。</p>
-<p>如果你仍然想用记事本，那就用吧~ 用完别忘了修改后缀为.html。</p>
-<h2 id="最简单的网页"><a href="#最简单的网页" class="headerlink" title="最简单的网页"></a>最简单的网页</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个 HTML 页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>body 元素的内容会显示在浏览器中。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>title 元素的内容会显示在浏览器的标题栏中。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <title>HTML进阶教程</title>
+    <url>/2020/03/18/HTML2/</url>
+    <content><![CDATA[<div class="note info">
+            <p>本文将接着讲解HTML语言的用法，如果你只需要掌握基本的用法，本文完全可以不看。</p>
+          </div>
 
-<p>效果如下：</p>
-<html>
-
-<head>
-<title>我的第一个 HTML 页面</title>
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Yfxl's Blog" type="application/atom+xml">
-</head>
-
-<body>
-<p>body 元素的内容会显示在浏览器中。</p>
-<p>title 元素的内容会显示在浏览器的标题栏中。</p>
-</body>
-
-</html>
-
-
-<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落元素由 p 标签定义。<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>效果如下：</p>
-<html>
-<body>
-
-<p>这是段落。</p>
-<p>这是段落。</p>
-<p>这是段落。</p>
-
-<p>段落元素由 p 标签定义。</p> 
-
-</body>
-</html>
-
-<p>若是更多的段落，HTML的规定是不管源代码中的行数，都会转换成一个空格。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">这个段落</span><br><span class="line">在源代码中</span><br><span class="line">包含许多行</span><br><span class="line">但是浏览器</span><br><span class="line">忽略了它们。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">这个段落</span><br><span class="line">在源代码       中</span><br><span class="line">包含   许多行</span><br><span class="line">但是      浏览器</span><br><span class="line">忽略了  它们。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<html>
-
-<body>
-
-<p>
-这个段落
-在源代码中
-包含许多行
-但是浏览器
-忽略了它们。
-</p>
-
-<p>
-这个段落
-在源代码       中
-包含   许多行
-但是      浏览器
-忽略了  它们。
-</p>
-
-<p>
-段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。
-</p>
-
-</body>
-</html>
-
-<h2 id="诗歌问题"><a href="#诗歌问题" class="headerlink" title="诗歌问题"></a>诗歌问题</h2><p>同上，浏览器忽略了源代码的排版：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>春晓<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    春眠不觉晓，</span><br><span class="line">      处处闻啼鸟。</span><br><span class="line">        夜来风雨声，</span><br><span class="line">          花落知多少。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<h3>春晓</h3>
-
-<p>
-    春眠不觉晓，
-      处处闻啼鸟。
-        夜来风雨声，
-          花落知多少。
-</p>
-
-<p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
-
-</body>
-
-</html>
-
-<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>换行用<code>&lt;br/&gt;</code>进行标识。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">To break<span class="tag">&lt;<span class="name">br</span> /&gt;</span>lines<span class="tag">&lt;<span class="name">br</span> /&gt;</span>in a<span class="tag">&lt;<span class="name">br</span> /&gt;</span>paragraph,<span class="tag">&lt;<span class="name">br</span> /&gt;</span>use the br tag.</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>
-To break<br />lines<br />in a<br />paragraph,<br />use the br tag.
-</p>
-
-</body>
-</html>
-
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>标题分为六个层次，和markdown相同。HTML用<code>&lt;h1&gt;&lt;/h1&gt;-&lt;h6&gt;&lt;/h6&gt;</code>表示。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>This is heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>This is heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>This is heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>This is heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>This is heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-<p>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。</p>
-
-
-<h3 id="居中的标题"><a href="#居中的标题" class="headerlink" title="居中的标题"></a>居中的标题</h3><p>居中排列用center进行标识。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span>This is heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<center>This is heading 1</center>
-
-<h2 id="水平线（分割线）"><a href="#水平线（分割线）" class="headerlink" title="水平线（分割线）"></a>水平线（分割线）</h2><p>我们用<code>&lt;hr/&gt;</code>标签来定义水平线。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>hr 标签定义水平线：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-<p>hr 标签定义水平线：</p>
-<hr />
-<p>这是段落。</p>
-<hr />
-<p>这是段落。</p>
-<hr />
-<p>这是段落。</p>
-</body>
-</html>
-
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>注释的作用相信各位编程大佬不用我多说了。 //斜杠真的不好使别试了</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一段普通的段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<!--这是一段注释。注释不会在浏览器中显示。-->
-<!--如你所见啊，你要是能看到这行字你也是挺厉害的哈哈哈哈哈-->
-<p>这是一段普通的段落。</p>
-
-</body>
-</html>
-
-<h2 id="更改颜色背景"><a href="#更改颜色背景" class="headerlink" title="更改颜色背景"></a>更改颜色背景</h2><p>更改颜色这个我不敢在博客里用，我怕我的博客变成黄色：）<br>效果可移步<a href="https://www.w3school.com.cn/tiy/t.asp?f=html_bgcolor" target="_blank" rel="noopener">W3School TIY Editor</a>查看。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=gb2312"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Language"</span> <span class="attr">content</span>=<span class="string">"zh-cn"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">"yellow"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>请看: 改变了颜色的背景。<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>说实在的，你可以看看里面那个颜色哪些支持直接写。。<br>如果真不知道那个颜色咋写，直接用十六位颜色码吧，别猜了。。。。</p>
-</blockquote>
-<h2 id="文本格式化"><a href="#文本格式化" class="headerlink" title="文本格式化"></a>文本格式化</h2><p>这个可以让你的文字变换一种字体，挺实用的。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>This text is bold<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>This text is strong<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">big</span>&gt;</span>This text is big<span class="tag">&lt;/<span class="name">big</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>This text is emphasized<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>This text is italic<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>This text is small<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">This text contains</span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>subscript<span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">This text contains</span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>superscript<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p><b>This text is bold</b></p>
-<br />
-
-<p><strong>This text is strong</strong></p>
-<br />
-
-<p><big>This text is big</big></p>
-<br />
-
-<p><em>This text is emphasized</em></p>
-<br />
-
-<p><i>This text is italic</i></p>
-<br />
-
-<p><small>This text is small</small></p>
-<br />
-
-<p>This text contains<sub>subscript</sub></p>
-<br />
-
-<p>This text contains<sup>superscript</sup></p>
-</body>
-</html>
-
-<blockquote>
-<p>讲真，markdown能支持也是挺厉害的。</p>
-</blockquote>
-<h2 id="预格式文本"><a href="#预格式文本" class="headerlink" title="预格式文本"></a>预格式文本</h2><p>预格式文本非常适合显示计算机代码，它能有效保留文本格式。</p>
-<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;body&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">这是</span><br><span class="line">预格式文本。</span><br><span class="line">它保留了      空格</span><br><span class="line">和换行。</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line"><span class="keyword">for</span> i = <span class="number">1</span> <span class="keyword">to</span> <span class="number">10</span></span><br><span class="line">     <span class="keyword">print</span> i</span><br><span class="line"><span class="keyword">next</span> i</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<pre>
-这是
-预格式文本。
-它保留了      空格
-和换行。
-</pre>
-
-<pre>
-for i = 1 to 10
-     print i
-next i
-</pre>
-
-</body>
-</html>
-
-
-<h2 id="计算机输出"><a href="#计算机输出" class="headerlink" title="计算机输出"></a>计算机输出</h2><p>这些都是常用于计算机代码输出的格式。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>Computer code<span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Keyboard input<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tt</span>&gt;</span>Teletype text<span class="tag">&lt;/<span class="name">tt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">samp</span>&gt;</span>Sample text<span class="tag">&lt;/<span class="name">samp</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">var</span>&gt;</span>Computer variable<span class="tag">&lt;/<span class="name">var</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>注释：<span class="tag">&lt;/<span class="name">b</span>&gt;</span>这些标签常用于显示计算机/编程代码。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p><code>Computer code</code><br><br /><br><kbd>Keyboard input</kbd><br><br /><br><tt>Teletype text</tt><br><br /><br><samp>Sample text</samp><br><br /><br><var>Computer variable</var><br><br /></p>
-<p>
-<b>注释：</b>这些标签常用于显示计算机/编程代码。
-</p>
-
-</body>
-</html>
-
-<h2 id="地址（邮箱）"><a href="#地址（邮箱）" class="headerlink" title="地址（邮箱）"></a>地址（邮箱）</h2><p>先解释一下malito：这个前缀可以直接调出邮箱的软件来添加邮箱。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">address</span>&gt;</span></span><br><span class="line">Written by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:yuefengxinglan@163.com"</span>&gt;</span>Myfxl<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.<span class="tag">&lt;<span class="name">br</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--下面的地址我就不改了哈哈哈哈哈哈--&gt;</span></span><br><span class="line">Visit us at:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Example.com<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Box 564, Disneyland<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">USA</span><br><span class="line"><span class="tag">&lt;/<span class="name">address</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-<body>
-
-<address>
-Written by <a href="mailto:yuefengxinglan@163.com">Myfxl</a>.<br> 
-<!--下面的地址我就不改了哈哈哈哈哈哈-->
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
-</address>
-
-</body>
-</html>
-
-<h2 id="缩写和首字母缩写"><a href="#缩写和首字母缩写" class="headerlink" title="缩写和首字母缩写"></a>缩写和首字母缩写</h2><blockquote>
-<p>细心的小盆友已经发现了，文章开头我就用了这个标记来缩写HTML：）</p>
-</blockquote>
-<p>注意：缩写单词和缩写短语所用标记不一样！！</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">"etcetera"</span>&gt;</span>etc.<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"World Wide Web"</span>&gt;</span>WWW<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>仅对于 IE 5 中的 acronym 元素有效。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p><abbr title="etcetera">etc.</abbr><br><br /><br><acronym title="World Wide Web">WWW</acronym></p>
-<p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
-
-<p>仅对于 IE 5 中的 acronym 元素有效。</p>
-
-<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
-
-</body>
-</html>
-
-<h2 id="文字方向"><a href="#文字方向" class="headerlink" title="文字方向"></a>文字方向</h2><p>这个有的时候可能挺实用的？反正我没用过就是了~</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">Here is some Hebrew text</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">用中文测试一下下</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>
-如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
-</p>
-
-<bdo dir="rtl">
-Here is some Hebrew text
-</bdo>
-
-<bdo dir="rtl">
-用中文测试一下下
-</bdo>
-
-</body>
-</html>
-
-<p>看到什么情况了吗？原因是我没有分行。<br>用<code>&lt;br/&gt;</code>分一下行就能解决了~</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">Here is some Hebrew text</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">用中文测试一下下</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<bdo dir="rtl">
-Here is some Hebrew text
-</bdo>
-<br/>
-<bdo dir="rtl">
-用中文测试一下下
-</bdo>
-
-<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">这是长的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span><br><span class="line">这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line">这是短的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span></span><br><span class="line">这是短的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">q</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>这是长的引用：</p>
-<blockquote>
-这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
-</blockquote>
-
-<p>这是短的引用：<br><q><br>这是短的引用。<br></q></p>
-<p>
-使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
-</p>
-
-</body>
-</html>
-
-<h2 id="删除字效果（划线）和下划线效果"><a href="#删除字效果（划线）和下划线效果" class="headerlink" title="删除字效果（划线）和下划线效果"></a>删除字效果（划线）和下划线效果</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一打有 <span class="tag">&lt;<span class="name">del</span>&gt;</span>二十<span class="tag">&lt;/<span class="name">del</span>&gt;</span> <span class="tag">&lt;<span class="name">ins</span>&gt;</span>十二<span class="tag">&lt;/<span class="name">ins</span>&gt;</span> 件。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>大多数浏览器会改写为删除文本和下划线文本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>一打有 <del>二十</del> <ins>十二</ins> 件。</p>
-
-<p>大多数浏览器会改写为删除文本和下划线文本。</p>
-
-<p>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</p>
-
-</body>
-</html>
-
-<h2 id="创建超链接"><a href="#创建超链接" class="headerlink" title="创建超链接"></a>创建超链接</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/blog/"</span>&gt;</span>本文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 是一个指向本网站中的一个页面的链接。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.microsoft.com/"</span>&gt;</span>本文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 是一个指向万维网上的页面的链接。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>
-<a href="/blog/">本文本</a> 是一个指向本网站中的一个页面的链接。</p>
-
-<p><a href="http://www.microsoft.com/" target="_blank" rel="noopener">本文本</a> 是一个指向万维网上的页面的链接。</p>
-
-</body>
-</html>
-
-<h2 id="将图像作为链接"><a href="#将图像作为链接" class="headerlink" title="将图像作为链接"></a>将图像作为链接</h2><figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="params">&lt;html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="params">&lt;body&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span></span><br><span class="line">您也可以使用图像来作链接：</span><br><span class="line"><span class="params">&lt;a href="https://www.w3school.com.cn/tiy/t.asp?f=html_imglink"&gt;</span></span><br><span class="line"><span class="params">&lt;img border="<span class="number">0</span>" src="https://ss0.bdstatic.com/<span class="number">94</span>oJfD_bAAcT8t7mm9GUKT-xh_/timg?image<span class="variable">&amp;quality</span>=<span class="number">100</span><span class="variable">&amp;size</span>=b4000_4000<span class="variable">&amp;sec</span>=<span class="number">1583156060</span><span class="variable">&amp;di</span>=<span class="number">5e841338047296</span>b174c9f18c27b28096<span class="variable">&amp;src</span>=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=<span class="number">1000</span>x667" /&gt;</span></span><br><span class="line"><span class="params">&lt;/a&gt;</span></span><br><span class="line"><span class="params">&lt;/p&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="params">&lt;/body&gt;</span></span><br><span class="line"><span class="params">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-<p>
-您也可以使用图像来作链接：
-<a href="https://www.w3school.com.cn/tiy/t.asp?f=html_imglink" target="_blank" rel="noopener">
-<img border="0" src= "/img/loading.gif" data-src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1583156060&di=5e841338047296b174c9f18c27b28096&src=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=1000x667" />
-</a>
-</p>
-
-</body>
-</html>
-
-<blockquote>
-<p>樱花图片用的是百度里的~ 等疫情过去了一定要去武汉看樱花。</p>
-</blockquote>
-<h2 id="在新的窗口打开链接"><a href="#在新的窗口打开链接" class="headerlink" title="在新的窗口打开链接"></a>在新的窗口打开链接</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.w3school.com.cn/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Visit W3School!<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a></p>
-<p>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。</p>
-
-</body>
-
-</html>
-
-<h2 id="链接到本文的不同位置"><a href="#链接到本文的不同位置" class="headerlink" title="链接到本文的不同位置"></a>链接到本文的不同位置</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#C4"</span>&gt;</span>查看 Chapter 4。<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 1<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 3<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"C4"</span>&gt;</span>Chapter 4<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 5<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 6<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 7<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 8<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 9<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 10<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 11<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 12<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 13<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 14<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 15<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 16<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 17<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="跳出框架"><a href="#跳出框架" class="headerlink" title="跳出框架"></a>跳出框架</h2><p>假如你的页面被限定在这了，你可以用这个回到首页之类的。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>被锁在框架中了吗？<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/blog/"</span></span></span><br><span class="line"><span class="tag"><span class="attr">target</span>=<span class="string">"_top"</span>&gt;</span>请点击这里！<span class="tag">&lt;/<span class="name">a</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<html>
-
-<body>
-
-<p>被锁在框架中了吗？</p> 
-
-<p><a href="/blog/"
-target="_top">请点击这里！</a> </p>
-</body>
-</html>
 
 <h2 id="发送电子邮件"><a href="#发送电子邮件" class="headerlink" title="发送电子邮件"></a>发送电子邮件</h2><p>点击文本你就能发送固定文本的邮件了。</p>
 <p>注意，这个标记需要你的设备有客户端才能成功使用。</p>
@@ -984,6 +595,412 @@ I have an airplane:
 </p>
 
 <h3 id="浮动图像"><a href="#浮动图像" class="headerlink" title="浮动图像"></a>浮动图像</h3><figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;</span><br><span class="line">&lt;img src =<span class="string">"/i/eg_cute.gif"</span> <span class="meta">align</span> =<span class="string">"left"</span>&gt; </span><br><span class="line">带有图像的一个段落。图像的 <span class="meta">align</span> 属性设置为 <span class="string">"left"</span>。图像将浮动到文本的左侧。</span><br><span class="line">&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;</span><br><span class="line">&lt;img src =<span class="string">"/i/eg_cute.gif"</span> <span class="meta">align</span> =<span class="string">"right"</span>&gt; </span><br><span class="line">带有图像的一个段落。图像的 <span class="meta">align</span> 属性设置为 <span class="string">"right"</span>。图像将浮动到文本的右侧。</span><br><span class="line">&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML用法初阶</title>
+    <url>/2020/03/02/HTML/</url>
+    <content><![CDATA[<blockquote>
+<p>本文整合自w3school。</p>
+</blockquote>
+<h2 id="HTML简单描述"><a href="#HTML简单描述" class="headerlink" title="HTML简单描述"></a>HTML简单描述</h2><p>HTML是一种标记型语言，全程<acronym title="Hyper Text Markup Language">HTML</acronym>。它不是编程语言，简单来说，HTML是用标记标签来标记网页。</p>
+<p>HTML标签通常是成对存在的，用尖括号&lt; &gt;包围。</p>
+<p>本文由于篇幅原因，不长篇大论，将以实例的形式展现。大多数人还是能看懂的~</p>
+<a id="more"></a>
+<p>笔者本人推荐使用Notepad++进行编辑，因为这款软件功能强大，几乎所有你能想得到的编程语言和标记语言它都能识别。</p>
+<p>如果你仍然想用记事本，那就用吧~ 用完别忘了修改后缀为.html。</p>
+<h2 id="最简单的网页"><a href="#最简单的网页" class="headerlink" title="最简单的网页"></a>最简单的网页</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个 HTML 页面<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>body 元素的内容会显示在浏览器中。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>title 元素的内容会显示在浏览器的标题栏中。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<html>
+
+<head>
+<title>我的第一个 HTML 页面</title>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Yfxl's Blog" type="application/atom+xml">
+</head>
+
+<body>
+<p>body 元素的内容会显示在浏览器中。</p>
+<p>title 元素的内容会显示在浏览器的标题栏中。</p>
+</body>
+
+</html>
+
+
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落元素由 p 标签定义。<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>效果如下：</p>
+<html>
+<body>
+
+<p>这是段落。</p>
+<p>这是段落。</p>
+<p>这是段落。</p>
+
+<p>段落元素由 p 标签定义。</p> 
+
+</body>
+</html>
+
+<p>若是更多的段落，HTML的规定是不管源代码中的行数，都会转换成一个空格。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">这个段落</span><br><span class="line">在源代码中</span><br><span class="line">包含许多行</span><br><span class="line">但是浏览器</span><br><span class="line">忽略了它们。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">这个段落</span><br><span class="line">在源代码       中</span><br><span class="line">包含   许多行</span><br><span class="line">但是      浏览器</span><br><span class="line">忽略了  它们。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<html>
+
+<body>
+
+<p>
+这个段落
+在源代码中
+包含许多行
+但是浏览器
+忽略了它们。
+</p>
+
+<p>
+这个段落
+在源代码       中
+包含   许多行
+但是      浏览器
+忽略了  它们。
+</p>
+
+<p>
+段落的行数依赖于浏览器窗口的大小。如果调节浏览器窗口的大小，将改变段落中的行数。
+</p>
+
+</body>
+</html>
+
+<h2 id="诗歌问题"><a href="#诗歌问题" class="headerlink" title="诗歌问题"></a>诗歌问题</h2><p>同上，浏览器忽略了源代码的排版：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>春晓<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    春眠不觉晓，</span><br><span class="line">      处处闻啼鸟。</span><br><span class="line">        夜来风雨声，</span><br><span class="line">          花落知多少。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<h3>春晓</h3>
+
+<p>
+    春眠不觉晓，
+      处处闻啼鸟。
+        夜来风雨声，
+          花落知多少。
+</p>
+
+<p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+
+</body>
+
+</html>
+
+<h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>换行用<code>&lt;br/&gt;</code>进行标识。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">To break<span class="tag">&lt;<span class="name">br</span> /&gt;</span>lines<span class="tag">&lt;<span class="name">br</span> /&gt;</span>in a<span class="tag">&lt;<span class="name">br</span> /&gt;</span>paragraph,<span class="tag">&lt;<span class="name">br</span> /&gt;</span>use the br tag.</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>
+To break<br />lines<br />in a<br />paragraph,<br />use the br tag.
+</p>
+
+</body>
+</html>
+
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>标题分为六个层次，和markdown相同。HTML用<code>&lt;h1&gt;&lt;/h1&gt;-&lt;h6&gt;&lt;/h6&gt;</code>表示。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>This is heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>This is heading 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>This is heading 3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>This is heading 4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>This is heading 5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>This is heading 6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。</p>
+
+
+<h3 id="居中的标题"><a href="#居中的标题" class="headerlink" title="居中的标题"></a>居中的标题</h3><p>居中排列用center进行标识。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span>This is heading 1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。上面的标题在页面中进行了居中排列。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<center>This is heading 1</center>
+
+<h2 id="水平线（分割线）"><a href="#水平线（分割线）" class="headerlink" title="水平线（分割线）"></a>水平线（分割线）</h2><p>我们用<code>&lt;hr/&gt;</code>标签来定义水平线。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>hr 标签定义水平线：<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+<p>hr 标签定义水平线：</p>
+<hr />
+<p>这是段落。</p>
+<hr />
+<p>这是段落。</p>
+<hr />
+<p>这是段落。</p>
+</body>
+</html>
+
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>注释的作用相信各位编程大佬不用我多说了。 //斜杠真的不好使别试了</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--这是一段注释。注释不会在浏览器中显示。--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这是一段普通的段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<!--这是一段注释。注释不会在浏览器中显示。-->
+<!--如你所见啊，你要是能看到这行字你也是挺厉害的哈哈哈哈哈-->
+<p>这是一段普通的段落。</p>
+
+</body>
+</html>
+
+<h2 id="更改颜色背景"><a href="#更改颜色背景" class="headerlink" title="更改颜色背景"></a>更改颜色背景</h2><p>更改颜色这个我不敢在博客里用，我怕我的博客变成黄色：）<br>效果可移步<a href="https://www.w3school.com.cn/tiy/t.asp?f=html_bgcolor" target="_blank" rel="noopener">W3School TIY Editor</a>查看。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=gb2312"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Language"</span> <span class="attr">content</span>=<span class="string">"zh-cn"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">"yellow"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>请看: 改变了颜色的背景。<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>说实在的，你可以看看里面那个颜色哪些支持直接写。。<br>如果真不知道那个颜色咋写，直接用十六位颜色码吧，别猜了。。。。</p>
+</blockquote>
+<h2 id="文本格式化"><a href="#文本格式化" class="headerlink" title="文本格式化"></a>文本格式化</h2><p>这个可以让你的文字变换一种字体，挺实用的。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>This text is bold<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>This text is strong<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">big</span>&gt;</span>This text is big<span class="tag">&lt;/<span class="name">big</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>This text is emphasized<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>This text is italic<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">small</span>&gt;</span>This text is small<span class="tag">&lt;/<span class="name">small</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">This text contains</span><br><span class="line"><span class="tag">&lt;<span class="name">sub</span>&gt;</span>subscript<span class="tag">&lt;/<span class="name">sub</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">This text contains</span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>superscript<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p><b>This text is bold</b></p>
+<br />
+
+<p><strong>This text is strong</strong></p>
+<br />
+
+<p><big>This text is big</big></p>
+<br />
+
+<p><em>This text is emphasized</em></p>
+<br />
+
+<p><i>This text is italic</i></p>
+<br />
+
+<p><small>This text is small</small></p>
+<br />
+
+<p>This text contains<sub>subscript</sub></p>
+<br />
+
+<p>This text contains<sup>superscript</sup></p>
+</body>
+</html>
+
+<blockquote>
+<p>讲真，markdown能支持也是挺厉害的。</p>
+</blockquote>
+<h2 id="预格式文本"><a href="#预格式文本" class="headerlink" title="预格式文本"></a>预格式文本</h2><p>预格式文本非常适合显示计算机代码，它能有效保留文本格式。</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="symbol">&lt;html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;body&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line">这是</span><br><span class="line">预格式文本。</span><br><span class="line">它保留了      空格</span><br><span class="line">和换行。</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="symbol">&lt;pre&gt;</span></span><br><span class="line"><span class="keyword">for</span> i = <span class="number">1</span> <span class="keyword">to</span> <span class="number">10</span></span><br><span class="line">     <span class="keyword">print</span> i</span><br><span class="line"><span class="keyword">next</span> i</span><br><span class="line">&lt;/<span class="keyword">pre</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<pre>
+这是
+预格式文本。
+它保留了      空格
+和换行。
+</pre>
+
+<pre>
+for i = 1 to 10
+     print i
+next i
+</pre>
+
+</body>
+</html>
+
+
+<h2 id="计算机输出"><a href="#计算机输出" class="headerlink" title="计算机输出"></a>计算机输出</h2><p>这些都是常用于计算机代码输出的格式。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">code</span>&gt;</span>Computer code<span class="tag">&lt;/<span class="name">code</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span>Keyboard input<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tt</span>&gt;</span>Teletype text<span class="tag">&lt;/<span class="name">tt</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">samp</span>&gt;</span>Sample text<span class="tag">&lt;/<span class="name">samp</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">var</span>&gt;</span>Computer variable<span class="tag">&lt;/<span class="name">var</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>注释：<span class="tag">&lt;/<span class="name">b</span>&gt;</span>这些标签常用于显示计算机/编程代码。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p><code>Computer code</code><br><br /><br><kbd>Keyboard input</kbd><br><br /><br><tt>Teletype text</tt><br><br /><br><samp>Sample text</samp><br><br /><br><var>Computer variable</var><br><br /></p>
+<p>
+<b>注释：</b>这些标签常用于显示计算机/编程代码。
+</p>
+
+</body>
+</html>
+
+<h2 id="地址（邮箱）"><a href="#地址（邮箱）" class="headerlink" title="地址（邮箱）"></a>地址（邮箱）</h2><p>先解释一下malito：这个前缀可以直接调出邮箱的软件来添加邮箱。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">address</span>&gt;</span></span><br><span class="line">Written by <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"mailto:yuefengxinglan@163.com"</span>&gt;</span>Myfxl<span class="tag">&lt;/<span class="name">a</span>&gt;</span>.<span class="tag">&lt;<span class="name">br</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--下面的地址我就不改了哈哈哈哈哈哈--&gt;</span></span><br><span class="line">Visit us at:<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Example.com<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">Box 564, Disneyland<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">USA</span><br><span class="line"><span class="tag">&lt;/<span class="name">address</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+<body>
+
+<address>
+Written by <a href="mailto:yuefengxinglan@163.com">Myfxl</a>.<br> 
+<!--下面的地址我就不改了哈哈哈哈哈哈-->
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+</body>
+</html>
+
+<h2 id="缩写和首字母缩写"><a href="#缩写和首字母缩写" class="headerlink" title="缩写和首字母缩写"></a>缩写和首字母缩写</h2><blockquote>
+<p>细心的小盆友已经发现了，文章开头我就用了这个标记来缩写HTML：）</p>
+</blockquote>
+<p>注意：缩写单词和缩写短语所用标记不一样！！</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">abbr</span> <span class="attr">title</span>=<span class="string">"etcetera"</span>&gt;</span>etc.<span class="tag">&lt;/<span class="name">abbr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">acronym</span> <span class="attr">title</span>=<span class="string">"World Wide Web"</span>&gt;</span>WWW<span class="tag">&lt;/<span class="name">acronym</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>仅对于 IE 5 中的 acronym 元素有效。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p><abbr title="etcetera">etc.</abbr><br><br /><br><acronym title="World Wide Web">WWW</acronym></p>
+<p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+
+<p>仅对于 IE 5 中的 acronym 元素有效。</p>
+
+<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+
+</body>
+</html>
+
+<h2 id="文字方向"><a href="#文字方向" class="headerlink" title="文字方向"></a>文字方向</h2><p>这个有的时候可能挺实用的？反正我没用过就是了~</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">Here is some Hebrew text</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">用中文测试一下下</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>
+如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+</p>
+
+<bdo dir="rtl">
+Here is some Hebrew text
+</bdo>
+
+<bdo dir="rtl">
+用中文测试一下下
+</bdo>
+
+</body>
+</html>
+
+<p>看到什么情况了吗？原因是我没有分行。<br>用<code>&lt;br/&gt;</code>分一下行就能解决了~</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">Here is some Hebrew text</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bdo</span> <span class="attr">dir</span>=<span class="string">"rtl"</span>&gt;</span></span><br><span class="line">用中文测试一下下</span><br><span class="line"><span class="tag">&lt;/<span class="name">bdo</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<bdo dir="rtl">
+Here is some Hebrew text
+</bdo>
+<br/>
+<bdo dir="rtl">
+用中文测试一下下
+</bdo>
+
+<h2 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">这是长的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span><br><span class="line">这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br><span class="line"></span><br><span class="line">这是短的引用：</span><br><span class="line"><span class="tag">&lt;<span class="name">q</span>&gt;</span></span><br><span class="line">这是短的引用。</span><br><span class="line"><span class="tag">&lt;/<span class="name">q</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>这是长的引用：</p>
+<blockquote>
+这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
+</blockquote>
+
+<p>这是短的引用：<br><q><br>这是短的引用。<br></q></p>
+<p>
+使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+</p>
+
+</body>
+</html>
+
+<h2 id="删除字效果（划线）和下划线效果"><a href="#删除字效果（划线）和下划线效果" class="headerlink" title="删除字效果（划线）和下划线效果"></a>删除字效果（划线）和下划线效果</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一打有 <span class="tag">&lt;<span class="name">del</span>&gt;</span>二十<span class="tag">&lt;/<span class="name">del</span>&gt;</span> <span class="tag">&lt;<span class="name">ins</span>&gt;</span>十二<span class="tag">&lt;/<span class="name">ins</span>&gt;</span> 件。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>大多数浏览器会改写为删除文本和下划线文本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>一打有 <del>二十</del> <ins>十二</ins> 件。</p>
+
+<p>大多数浏览器会改写为删除文本和下划线文本。</p>
+
+<p>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</p>
+
+</body>
+</html>
+
+<h2 id="创建超链接"><a href="#创建超链接" class="headerlink" title="创建超链接"></a>创建超链接</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/blog/"</span>&gt;</span>本文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 是一个指向本网站中的一个页面的链接。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.microsoft.com/"</span>&gt;</span>本文本<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 是一个指向万维网上的页面的链接。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>
+<a href="/blog/">本文本</a> 是一个指向本网站中的一个页面的链接。</p>
+
+<p><a href="http://www.microsoft.com/" target="_blank" rel="noopener">本文本</a> 是一个指向万维网上的页面的链接。</p>
+
+</body>
+</html>
+
+<h2 id="将图像作为链接"><a href="#将图像作为链接" class="headerlink" title="将图像作为链接"></a>将图像作为链接</h2><figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="params">&lt;html&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="params">&lt;body&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span></span><br><span class="line">您也可以使用图像来作链接：</span><br><span class="line"><span class="params">&lt;a href="https://www.w3school.com.cn/tiy/t.asp?f=html_imglink"&gt;</span></span><br><span class="line"><span class="params">&lt;img border="<span class="number">0</span>" src="https://ss0.bdstatic.com/<span class="number">94</span>oJfD_bAAcT8t7mm9GUKT-xh_/timg?image<span class="variable">&amp;quality</span>=<span class="number">100</span><span class="variable">&amp;size</span>=b4000_4000<span class="variable">&amp;sec</span>=<span class="number">1583156060</span><span class="variable">&amp;di</span>=<span class="number">5e841338047296</span>b174c9f18c27b28096<span class="variable">&amp;src</span>=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=<span class="number">1000</span>x667" /&gt;</span></span><br><span class="line"><span class="params">&lt;/a&gt;</span></span><br><span class="line"><span class="params">&lt;/p&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="params">&lt;/body&gt;</span></span><br><span class="line"><span class="params">&lt;/html&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+<p>
+您也可以使用图像来作链接：
+<a href="https://www.w3school.com.cn/tiy/t.asp?f=html_imglink" target="_blank" rel="noopener">
+<img border="0" src= "/img/loading.gif" data-src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1583156060&di=5e841338047296b174c9f18c27b28096&src=http://p7.qhimg.com/t01c3da4b63a62d8b1d.jpg?size=1000x667" />
+</a>
+</p>
+
+</body>
+</html>
+
+<blockquote>
+<p>樱花图片用的是百度里的~ 等疫情过去了一定要去武汉看樱花。</p>
+</blockquote>
+<h2 id="在新的窗口打开链接"><a href="#在新的窗口打开链接" class="headerlink" title="在新的窗口打开链接"></a>在新的窗口打开链接</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.w3school.com.cn/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Visit W3School!<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p><a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a></p>
+<p>如果把链接的 target 属性设置为 "_blank"，该链接会在新窗口中打开。</p>
+
+</body>
+
+</html>
+
+<h2 id="链接到本文的不同位置"><a href="#链接到本文的不同位置" class="headerlink" title="链接到本文的不同位置"></a>链接到本文的不同位置</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#C4"</span>&gt;</span>查看 Chapter 4。<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 1<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 3<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"C4"</span>&gt;</span>Chapter 4<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 5<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 6<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 7<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 8<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 9<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 10<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 11<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 12<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 13<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 14<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 15<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 16<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Chapter 17<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>This chapter explains ba bla bla<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="跳出框架"><a href="#跳出框架" class="headerlink" title="跳出框架"></a>跳出框架</h2><p>假如你的页面被限定在这了，你可以用这个回到首页之类的。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>被锁在框架中了吗？<span class="tag">&lt;/<span class="name">p</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/blog/"</span></span></span><br><span class="line"><span class="tag"><span class="attr">target</span>=<span class="string">"_top"</span>&gt;</span>请点击这里！<span class="tag">&lt;/<span class="name">a</span>&gt;</span> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<html>
+
+<body>
+
+<p>被锁在框架中了吗？</p> 
+
+<p><a href="/blog/"
+target="_top">请点击这里！</a> </p>
+</body>
+</html>
+
 
 
 
